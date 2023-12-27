@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">  
+
+<hibernate-mapping>
+
+<!-- com.pojoClass.Student is the name of the java class student is the name of the table -->
+<class name="com.hibernate.Using_XmlFile.entity.Customer" table="customer">
+<id name="id" column="id" type="int">
+<generator class="sequence"/>
+</id>
+<property name="name" column="name" type="string" not-null="false"/>
+<list name="">
+<key></key>
+<one-to-many/>
+</list>
+</class>
+<class name="com.hibernate.Using_XmlFile.entity.Orders" table="orders">
+<id name=""/>
+<many-to-one name=""></many-to-one>
+</class>
+</hibernate-mapping>

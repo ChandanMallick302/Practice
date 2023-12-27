@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"> 
+<hibernate-configuration>
+<session-factory>
+<!-- As we are connecting MySQL, com.mysql.jdbc. Driver is required(JDBC driver class) -->
+<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+<!-- Here hibernatepractice is the name of the database that we are connecting(JDBC URL) -->
+<property name="connection.url">jdbc:mysql://localhost:3306/hibernatepractice</property>
+
+<!-- Username to connect to MySQL -->
+<property name="connection.username">root</property>
+
+<!-- Password to connect to MySQL, Provide your correct password -->
+<property name="connection.password">root</property>
+
+<!-- JDBC connection pool (use the built-in) -->
+<!-- <property name="connection.pool_size">1</property> -->
+
+<!-- This property makes Hibernate generate the appropriate SQL for MySQL here -->
+<!-- Dialect required between hibernate and MySQL -->
+<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+<!-- Drop and re-create the database schema on startup -->
+<property name="hbm2ddl.auto">update</property>
+
+<!-- Echo all executed SQL to stdout -->
+<property name="show_sql">true</property>
+<property name="format_sql">true</property>
+
+<!-- Enable the second-level cache -->
+<property name="cache.use_second_level_cache">true</property>
+<property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
+
+<!-- Disable the second-level cache -->
+<!-- <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property> -->
+
+<!-- Enable Hibernate's automatic session context management -->
+<!-- <property name="current_session_context_class">thread</property> -->
+
+<!-- path of a mapping file, for us its our Student class and Address class which is a POJO -->
+
+<!-- OneToOne -->
+
+<mapping class="com.hibernate.entity.Answer"/>
+<mapping class="com.hibernate.entity.Question"/>
+
+</session-factory>
+</hibernate-configuration>

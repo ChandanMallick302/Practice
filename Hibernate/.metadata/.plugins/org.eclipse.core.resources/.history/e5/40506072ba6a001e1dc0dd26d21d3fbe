@@ -1,0 +1,14 @@
+package com.hibernate.pojoClass;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "team")
+public class Team {
+
+	@Id
+	private int id;
+	private String tname;
+}

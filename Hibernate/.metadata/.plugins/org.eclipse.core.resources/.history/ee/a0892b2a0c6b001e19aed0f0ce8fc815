@@ -1,0 +1,24 @@
+package com.hibernate.dao.CRUD;
+
+import java.util.List;
+
+import org.hibernate.*;
+import org.hibernate.query.NativeQuery;
+
+import com.hibernate.dao.Dao;
+import com.hibernate.pojoClass.Player;
+
+public class Player_CRUD {
+
+	@SuppressWarnings("deprecation")
+	public static void selectAllPlayer() {
+		Session session = Dao.openSession();
+
+		String q = "select * from player";
+		NativeQuery query = session.createNativeQuery(q);
+		
+		List<Player> list = query.list();
+		list.forEach(e->{System.out.println(e.getName());});
+		Dao.shutdownSession();
+	}
+}

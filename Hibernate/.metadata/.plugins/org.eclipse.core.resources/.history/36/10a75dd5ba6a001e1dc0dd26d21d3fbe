@@ -1,0 +1,76 @@
+package com.hibernate.pojoClass;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
+
+@Entity(name = "player")
+public class Player {
+
+	@Id
+	private int id;
+
+	private int age;
+
+	private String name;
+
+	@OneToOne
+	private Team teamName;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Team getTeamName() {
+		return teamName;
+	}
+
+	public void setTeamName(Team teamName) {
+		this.teamName = teamName;
+	}
+
+	public Player() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Player(int id, int age, String name, Team teamName) {
+		super();
+		this.id = id;
+		this.age = age;
+		this.name = name;
+		this.teamName = teamName;
+	}
+
+	public Player(int age, String name, String teamName) {
+		super();
+		this.age = age;
+		this.name = name;
+		this.teamName = teamName;
+	}
+	
+	@Override
+	public String toString() {
+		return "Player [id=" + id + ", age=" + age + ", name=" + name + ", teamName=" + teamName + "]";
+	}
+}

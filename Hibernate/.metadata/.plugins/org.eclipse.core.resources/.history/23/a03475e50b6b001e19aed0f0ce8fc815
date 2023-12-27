@@ -1,0 +1,18 @@
+package com.hibernate.dao.CRUD;
+
+import org.hibernate.*;
+import org.hibernate.query.NativeQuery;
+
+import com.hibernate.dao.Dao;
+
+public class Player_CRUD {
+
+	@SuppressWarnings("deprecation")
+	public static void selectAllPlayer() {
+		Session session = Dao.openSession();
+
+		String q = "from player";
+		NativeQuery query = session.createNativeQuery(q);
+		Dao.shutdownSession();
+	}
+}

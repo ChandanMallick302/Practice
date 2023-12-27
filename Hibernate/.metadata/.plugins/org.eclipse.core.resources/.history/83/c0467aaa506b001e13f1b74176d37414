@@ -1,0 +1,10 @@
+package com.hibernate.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.IdClass;
+
+@Entity
+@IdClass
+public class Product {
+
+}

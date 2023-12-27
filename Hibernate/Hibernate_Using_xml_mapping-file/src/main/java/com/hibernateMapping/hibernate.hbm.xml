@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">  
+
+<hibernate-mapping>
+
+<!-- com.pojoClass.Student is the name of the java class student is the name of the table -->
+<class name="com.pojoClass.Student" table="student">
+<id name="id" column="sid" type="int">
+<generator class="sequence"/>
+</id>
+<property name="name" column="sname" type="string" not-null="true"/>
+</class>
+</hibernate-mapping>

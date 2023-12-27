@@ -1,0 +1,6 @@
+package com.hibernate.entity;
+
+@Entity
+public class Customer {
+
+}

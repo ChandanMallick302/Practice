@@ -1,0 +1,7 @@
+package com.hibernate.entity;
+
+@Entity
+@Table(name="customer")
+public class Customer {
+
+}

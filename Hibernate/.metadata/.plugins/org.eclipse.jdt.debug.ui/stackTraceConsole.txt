@@ -1,0 +1,17 @@
+@SuppressWarnings("deprecation")
+	public static boolean updateAllPlayer(String x) {
+		boolean f=false;
+		
+		Session session = Dao.openSession();
+		Transaction transaction = session.beginTransaction();
+		
+		String q="update player as p set p.name=:x";
+		Query query = session.createQuery(q);
+		query.setParameter("x", x);
+		int executeUpdate = query.executeUpdate();
+		System.out.println(+executeUpdate+" Data Sucessfully updated");
+		transaction.commit();
+		Dao.shutdownSession();
+		f=true;
+		return f;
+	}
