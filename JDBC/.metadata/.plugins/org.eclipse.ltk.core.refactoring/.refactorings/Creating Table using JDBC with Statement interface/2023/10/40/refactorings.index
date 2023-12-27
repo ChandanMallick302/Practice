@@ -1,0 +1,17 @@
+1696341120183	Rename type 'CreateTable'
+1696342076604	Move compilation unit
+1696342171613	Rename package 'comcreateTable'
+1696343175060	Rename package 'com.createTable'
+1696343210314	Rename type 'CreateTable'
+1696394472977	Delete element
+1696394476938	Delete element
+1696394480055	Delete element
+1696394500660	Rename package 'com.Statement'
+1696395470365	Rename package 'com.QueryStatement'
+1696395479518	Move compilation unit
+1696395485817	Delete elements
+1696395738136	Rename type 'databaseConnection'
+1696400443840	Move compilation unit
+1696419831744	Copy package
+1696419852333	Rename type 'UpdateTable'
+1696436410031	Copy package

@@ -1,0 +1,34 @@
+package com.CreateTable;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class CreateTable {
+
+	public CreateTable() throws Exception {
+		try {
+			// Fire Query
+			DatabaseConnection db1=new DatabaseConnection();
+			Connection con=db1.getConnection();
+			Statement stmt = con.createStatement();
+			stmt.executeUpdate("Create Table student(id int,name varchar(200))");
+		}
+			finally {
+				con.close();
+			}
+			con.close();
+		 catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) {
+		try {
+			new CreateTable();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

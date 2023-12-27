@@ -1,0 +1,8 @@
+package ExceptionTest;
+
+public class Test1 {
+
+	public void testPrint() {
+		
+	}
+}

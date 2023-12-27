@@ -1,0 +1,22 @@
+package com.updateTable;
+
+import java.sql.Connection;
+
+import com.databaseconnection.Databaseconnection;
+
+public class UpdateTable {
+
+	private Connection con;
+
+	public void updateAll() {
+		try {
+			Databaseconnection db=new Databaseconnection();
+			this.con = db.getConnection();
+		}catch (Exception e) {
+			// TODO: handle exception
+		}finally {
+			this.con.close();
+		}
+		
+	}
+}

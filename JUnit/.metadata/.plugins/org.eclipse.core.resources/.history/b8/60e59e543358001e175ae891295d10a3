@@ -1,0 +1,60 @@
+package com.simplilearn.student;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.Test;
+
+public class TestStudentMark {
+
+	//Making expected test cases
+	//Here inputs are taking as Expected
+	
+	//Expected Totalmark is 300 after adding all subject marks
+	@Test
+	public void test_getTotalMark(){
+		assertEquals(300.0, StudentMark.getTotalMarks(100, 100, 100),0.0f);
+	}
+	//Expected Totalmark is 0 to 100 but if greater than 100
+	@Test(expected =ArithmeticException.class)
+	public void test_getTotalMarkAbove() {
+		StudentMark.getTotalMarks(1000, 1000,100);
+	}
+	//Expected Totalmark is 0 to 100 but if less than 0
+	@Test(expected =ArithmeticException.class)
+	public void test_getTotalMarkBellow() {
+		StudentMark.getTotalMarks(-1, -1, -1);
+	}
+	
+	// Expected mark input is like 10 but if actual is 10+20+30 then the jvm will give arithmatic exception automatically 
+	@Test
+	public void test_getTotalMarksArithmeticCheck() {
+		StudentMark.getTotalMarks(10+20+30, 30+20, 40+20+10);
+	}
+	//Expected Grade A+ above 80 percentage
+	@Test
+	public void test_getGreade() {
+		assertEquals("A+", StudentMark.getGrade(90));
+	}
+	//Expected Grade InvalidMrks input in between 0 to 100 but if greater than 100
+	@Test(expected = ArithmeticException.class)
+	public void test_getGreadeInvalidMarks() {
+		assertEquals("A+", StudentMark.getGrade(900));
+	}
+	
+	//Expected total percentage is 100.00, of all three subjects marks
+	@Test
+	public void test_getPercentage() {
+		assertEquals(100.00, StudentMark.getPercentage(100, 100, 100),0.0f);
+	}
+	
+	//Expected mark input in between 0 to 100 but if greater than 100
+	@Test(expected = ArithmeticException.class)
+	public void test_getInvalidMarksAbove() {
+		StudentMark.getPercentage(1000, 1000, 1000);
+	}
+	//Expected mark input in between 0 to 100 but if less than 0
+	@Test(expected = ArithmeticException.class)
+	public void test_getInvalidMarksBellow() {
+		StudentMark.getPercentage(-1, -1, -1);
+	}	
+}

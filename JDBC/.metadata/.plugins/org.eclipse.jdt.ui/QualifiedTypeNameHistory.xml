@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.protocol.Resultset"/>
+    <fullyQualifiedTypeName name="java.lang.Readable"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.Statement.CreateQuery"/>
+    <fullyQualifiedTypeName name="com.databaseConnection.CreateDatabaseConnection"/>
+    <fullyQualifiedTypeName name="com.CreateTable.databaseConnection"/>
+    <fullyQualifiedTypeName name="java.sql.SQLSyntaxErrorException"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="com.InsertTable.InsertIData_IntoTable"/>
+    <fullyQualifiedTypeName name="com.DeleteTable.DeleteTable"/>
+    <fullyQualifiedTypeName name="com.UpdateTable.UpdateTable"/>
+    <fullyQualifiedTypeName name="com.TruncateTable.TruncateTable"/>
+    <fullyQualifiedTypeName name="com.SelectTable.SelectTable"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.databaseconnection.Databaseconnecti"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.CreateTable.CreateTable"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="com.insertTable.InsertTable"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.updateTable.UpdateTable"/>
+    <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
+    <fullyQualifiedTypeName name="com.databaseconnection.Databaseconnection"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="com.selectTable.SelectTable"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="com.insertImages.InsertImages"/>
+    <fullyQualifiedTypeName name="com.databaseConnection.DatabaseConnection"/>
+    <fullyQualifiedTypeName name="javax.swing.JFileChooser"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.FileChooserUI"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,49 @@
+package com.insertImagesAbove65Kb;
+
+import java.io.FileInputStream;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class InsertImagesAbove65kb {
+	private Connection con;
+	public void InsertOne()throws Exception {
+		try {
+			DatabaseConnection db=new DatabaseConnection();
+			this.con1 = db.getConnection();
+			PreparedStatement pstmt1 = con1.prepareStatement("alter table images modify pic longblob");
+			int altered = pstmt1.executeUpdate();
+			if(altered>0){
+				System.out.println("Successfully altered");
+				this.con2=db.getConnection();
+				PreparedStatement pstmt = con2.prepareStatement("insert into images (pic) values(?)");
+				
+				FileInputStream fis=new FileInputStream("src/com/insertImagesAbove65Kb/Ram.jpg");
+				
+				pstmt.setBinaryStream(1,fis,fis.available());
+				
+				int inserImage = pstmt.executeUpdate();
+				 	
+				if(inserImage>0) {
+					System.out.println("image inserted into database");
+				}
+				else {
+					System.out.println("Data insertion failed");
+				}
+			}else {
+			System.out.println("Failed");	
+			}
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}finally {
+			con.close();
+		}
+	}
+	public static void main(String[] args) throws Exception {
+		InsertImagesAbove65kb i = new InsertImagesAbove65kb();
+		i.InsertOne();
+	}
+}

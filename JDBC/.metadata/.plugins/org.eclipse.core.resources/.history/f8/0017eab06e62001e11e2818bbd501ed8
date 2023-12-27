@@ -1,0 +1,42 @@
+package com.testQuery;
+
+import java.util.Scanner;
+
+import com.Statement.CreateQuery;
+
+public class TestQuery {
+
+	public static Scanner sc=new Scanner(System.in);
+	
+	
+	public static void main(String[] args) throws Exception {
+		System.out.println("Press 1 for Create Table");
+		System.out.println("");
+		int id = sc.nextInt();
+		switch (id) {
+		case 1:
+			System.out.println("Enter Table Name");
+			String name = sc.next();
+			try {
+				CreateQuery q=new CreateQuery();
+				if(q.createTable(name)==true) {
+					System.out.println("Table creation is successful");
+				}
+				else {
+					System.out.println("Table Creation failed");
+				}
+			}catch (Exception e) {
+				System.out.println("");
+			}
+			break;
+		case 2:
+			
+			break;
+
+		default:
+			System.out.println("Please Enter correctly");
+			break;
+		}
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.SelectTable;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class SelectTable {
+
+	]public void selectAll() {
+		DatabaseConnection db=new DatabaseConnection();
+		
+	}
+}

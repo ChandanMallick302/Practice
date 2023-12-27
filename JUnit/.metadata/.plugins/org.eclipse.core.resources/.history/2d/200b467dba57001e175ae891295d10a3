@@ -1,0 +1,14 @@
+package TestSuite;
+
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.platform.suite.api.SelectClasses;
+import org.junit.platform.suite.api.Suite;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite.SuiteClasses;
+
+@SuppressWarnings("deprecation")
+@RunWith(Suite.class)
+@Suite.SuiteClasses({SuiteTest1.class,SuiteTest2.class})
+public class Main_TestSuite {
+	
+}

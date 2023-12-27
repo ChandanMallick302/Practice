@@ -1,0 +1,31 @@
+package com.InsertTable;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class InsertIData_IntoTable {
+
+	public InsertIData_IntoTable() throws Exception {
+		try {
+			DatabaseConnection db = new DatabaseConnection();
+			Connection con = db.getConnection();
+			Statement stmt = con.createStatement();
+			stmt.execute("insert into student value(1,'Chandan')");
+			System.out.println("Data cant be inseted");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	public static void main(String[] args) {
+		try {
+			new InsertIData_IntoTable();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

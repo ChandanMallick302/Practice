@@ -1,0 +1,22 @@
+package com.testQuery;
+
+import java.util.Scanner;
+
+import com.Statement.CreateQuery;
+
+public class TestQuery {
+
+	public static Scanner sc=new Scanner(System.in);
+	
+	public static void main(String[] args) throws Exception {
+		sc.ne
+		
+		try {
+			CreateQuery q1=new CreateQuery();
+			q1.createTable("student");
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

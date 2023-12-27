@@ -1,0 +1,13 @@
+package com.selectTable;
+
+public class SelectTable {
+
+	public void selectAll() {
+		
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

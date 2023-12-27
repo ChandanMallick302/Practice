@@ -1,0 +1,10 @@
+package com.simplilearn.student;
+
+public class StudentMark {
+
+	public static void main(String[] args) {
+		//Declaring and initializing variables
+		
+	}
+	
+}

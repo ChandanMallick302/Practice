@@ -1,0 +1,29 @@
+package com.databaseConnection;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class DatabaseConnection {
+	
+	public DatabaseConnection() {
+		try {
+			// load the driver
+			Class.forName("com.mysql.cj.jdbc.Driver");
+
+			// create connection
+			String url = "jdbc:mysql://localhost:3306/mydb";
+			String user = "root";
+			String password = "root";
+			Connection con = DriverManager.getConnection(url, user, password);
+			this.stmt = con.createStatement();
+			if (stmt.isClosed()) {
+				System.out.println("Databse connection is closed");
+			} else {
+				System.out.println("Connection is sucessfully established");
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

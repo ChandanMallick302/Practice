@@ -1,0 +1,32 @@
+package com.CreateTable;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class CreateTable {
+
+	public CreateTable() throws Exception {
+		try {
+			// Fire Query
+			DatabaseConnection db1=new DatabaseConnection();
+			Statement stmt = db1.getStatement();
+			stmt.executeUpdate("Create Table Student(id int,name varchar(200))");
+			System.out.println("Table is sucessfully created");
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+		try {
+			new CreateTable();
+		} catch (Exception e) {
+			System.out.println("Table is already exist");;
+		}
+	}
+}

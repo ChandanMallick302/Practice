@@ -1,0 +1,10 @@
+package com.simplilearn.student;
+
+public class TestStudentMark {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

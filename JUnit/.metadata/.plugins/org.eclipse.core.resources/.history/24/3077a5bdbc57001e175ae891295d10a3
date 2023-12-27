@@ -1,0 +1,10 @@
+package ExceptionTest;
+
+public class TestMessage {
+
+	public static void print() {
+		int a= 0;
+		int b=1/a;
+		System.out.println("Divident value= "+b);
+	}
+}

@@ -1,0 +1,12 @@
+package com.simplilearn.student;
+
+import org.junit.jupiter.api.Test;
+
+public class TestStudentMark {
+
+	@Test
+	public void test_getTotalMark(){
+		
+	}
+
+}

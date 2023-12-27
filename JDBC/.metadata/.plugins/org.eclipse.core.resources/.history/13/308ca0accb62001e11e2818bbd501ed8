@@ -1,0 +1,26 @@
+package com.updateTable;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.databaseconnection.Databaseconnection;
+
+public class UpdateTable {
+
+	private Connection con;
+
+	public void updateAll()throws Exception {
+		try {
+			Databaseconnection db=new Databaseconnection();
+			this.con = db.getConnection();
+			PreparedStatement pstmt = con.prepareStatement(null);
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}finally {
+			this.con.close();
+		}
+		
+	}
+}

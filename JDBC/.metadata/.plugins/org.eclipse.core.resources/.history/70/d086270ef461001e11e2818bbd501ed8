@@ -1,0 +1,8 @@
+package com;
+
+public class CreateDatabaseConnection {
+
+	public CreateDatabaseConnection() {
+		// TODO Auto-generated constructor stub
+	}
+}

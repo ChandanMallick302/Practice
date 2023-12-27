@@ -1,0 +1,11 @@
+package TestSuite;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+@org.junit.platform.suite.api.Suite
+
+@RunWith(Suite.class)
+@Suite
+public class Main_TestSuite {
+	
+}

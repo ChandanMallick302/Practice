@@ -1,0 +1,9 @@
+package com.databaseConnection;
+
+public class DatabaseConnection {
+ public DatabaseConnection() {
+	try{
+		
+	}
+}
+}

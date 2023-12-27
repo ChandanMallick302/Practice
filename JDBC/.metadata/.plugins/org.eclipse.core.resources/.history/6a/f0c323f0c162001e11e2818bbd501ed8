@@ -1,0 +1,16 @@
+package com.insertTable;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class cxcx {
+
+	public static void main(String[] args) {
+		int id[]= {1,2,3};
+		List al=new ArrayList<>();
+		al.add(id);
+		System.out.println(al.get(1));
+
+	}
+
+}

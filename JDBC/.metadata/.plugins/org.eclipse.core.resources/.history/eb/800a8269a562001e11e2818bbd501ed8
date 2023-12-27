@@ -1,0 +1,8 @@
+package com.UpdateTable;
+
+public class UpdateTable {
+
+	public UpdateTable() {
+		
+	}
+}

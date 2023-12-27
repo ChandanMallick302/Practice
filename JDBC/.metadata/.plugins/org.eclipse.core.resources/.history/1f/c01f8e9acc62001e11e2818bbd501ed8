@@ -1,0 +1,40 @@
+package com.updateTable;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.databaseconnection.Databaseconnection;
+
+public class UpdateTable {
+
+	private Connection con;
+
+	public void updateAll() throws Exception {
+		try {
+			Databaseconnection db = new Databaseconnection();
+			this.con = db.getConnection();
+			PreparedStatement pstmt = con.prepareStatement("upate student set (id=?,name=?)");
+			
+			pstmt.setInt(1, 1);
+			pstmt.setString(2, "xyz");
+			
+			int updateTable = pstmt.executeUpdate();
+
+			if (updateTable > 0) {
+				System.out.println("successfully updated");
+			} else {
+				System.out.println("Upadation failed");
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		} finally {
+			this.con.close();
+		}
+
+	}
+	public static void main(String[] args) {
+		
+	}
+}

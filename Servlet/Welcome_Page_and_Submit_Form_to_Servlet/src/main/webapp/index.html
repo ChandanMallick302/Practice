@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form page</title>
+
+<style type="text/css">
+.container{
+width: 40%;
+border: 1px solid black;
+margin: auto;
+padding: 0px 25px 25px 25px;
+font-size: 20px;
+}
+.container h1{
+text-align: center;
+}
+#myform table tr td input{
+font-size: 20px;
+}
+#button{
+
+}
+</style>
+</head>
+<body>
+	<div>
+		<div class=container>
+			<h1>My Form</h1>
+			<form id="myform" action="ResisterServlet" method="post">
+				<table>
+					<tr>
+						<td>Enter name</td>
+						<td><input type="text" name="name" placeholder="Enter Here"></td>
+					</tr>
+					<tr>
+						<td>Enter Password</td>
+						<td><input type="password" name="password"
+							placeholder="Enter Here"></td>
+					</tr>
+					<tr>
+						<td>Enter Email</td>
+						<td><input type="email" name="email" placeholder="Enter Here"></td>
+					</tr>
+					<tr>
+						<td>Select Gender</td>
+						<td><input type="radio" name="gender" value="male">
+							Male &nbsp; &nbsp; <input type="radio" name="gender" value=female">Female</td>
+					</tr>
+					<tr>
+						<td>Select your course</td>
+						<td><select name="course">
+								<option>Select Option</option>
+								<option value="Java">Java</option>
+								<option value="Python">Python</option>
+								<option value="PHP">PHP</option>
+								<option value="Android">Android</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><br><input type="checkbox" name="condition"
+							value="checked"><label>Agree term & Condition</label></td>
+					</tr>
+					<tr>
+					<td></td>
+					<td ><input type="submit" value="Resister"> &nbsp;
+					    <input type="reset" value="Reset">
+					</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

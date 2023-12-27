@@ -1,0 +1,15 @@
+package com;
+
+public class CreateDatabaseConnection {
+
+	
+	public CreateDatabaseConnection() throws Exception {
+		try {
+			//Load Driver
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

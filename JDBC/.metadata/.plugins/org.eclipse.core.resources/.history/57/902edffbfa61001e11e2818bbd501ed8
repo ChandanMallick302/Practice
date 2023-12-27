@@ -1,0 +1,43 @@
+package com.Statement;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+import com.databaseConnection.CreateDatabaseConnection;
+
+public class CreateQuery {
+	
+	private Statement stmt;
+	private Connection con;
+	
+	public CreateQuery() throws Exception {
+		//calling database connection
+		CreateDatabaseConnection con1=new CreateDatabaseConnection();
+		this.con = con1.getCon();
+	}
+
+	public void createTable(String tablename) throws Exception {
+		
+		try {
+            //create statement connection
+			
+			
+			//create query
+			String sql="Create table "+tablename+"(id int, name varchar(100))";
+			this.stmt = con.createStatement();
+			boolean creteTable = stmt.execute(sql);
+			
+			//process
+			if(creteTable) {
+				System.out.println("Table creation sucessfull");
+			}else {
+				System.out.println("Table is already exist");
+			}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+}

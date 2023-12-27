@@ -1,0 +1,29 @@
+package com.CreateTable;
+
+import java.sql.Statement;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class CreateTable {
+
+	public CreateTable() throws Exception {
+		try {
+			// Fire Query
+			DatabaseConnection db1=new DatabaseConnection();
+			Statement stmt = db1.getStatement();
+			stmt.executeUpdate("Create Table abc(id int,name varchar(200))");
+			System.out.println("Table is sucessfully created");
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("Table is already exist");
+		}
+	}
+	public static void main(String[] args) {
+		try {
+			new CreateTable();
+		} catch (Exception e) {
+			System.out.println("Table is already exist");
+		}
+	}
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>ServletLifeCycle</display-name>
+<!--   set welcome file -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+<!--   servlet declaration -->
+  <servlet>
+  <description></description>
+  <servlet-name>ServletLifeCycle</servlet-name>
+  <servlet-class>com.ServletLifeCycle</servlet-class>
+  </servlet>
+  
+<!--   servlet mapping -->
+<servlet-mapping>
+<servlet-name>ServletLifeCycle</servlet-name>
+<url-pattern>/ServletLifeCycle</url-pattern>
+</servlet-mapping>
+
+<!-- set session time -->
+<session-config>
+<session-timeout>30</session-timeout>
+</session-config>
+</web-app>

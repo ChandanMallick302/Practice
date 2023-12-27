@@ -1,0 +1,13 @@
+package com.UpdateTable;
+
+import java.sql.Connection;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class UpdateTable {
+
+	public UpdateTable() {
+		DatabaseConnection db=new DatabaseConnection();
+		Connection con = db.getConnection();
+	}
+}

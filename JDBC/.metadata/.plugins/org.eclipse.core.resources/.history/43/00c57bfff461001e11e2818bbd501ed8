@@ -1,0 +1,25 @@
+package com;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class CreateDatabaseConnection {
+
+	
+	private String url="jdbc:mysql://localhost:3306/paper";
+	private String user="root";
+	private String password="root";
+
+	public CreateDatabaseConnection() throws Exception {
+		try {
+			//Load the Driver
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			//Create Connection
+			Connection con = DriverManager.getConnection(url, user, password);
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

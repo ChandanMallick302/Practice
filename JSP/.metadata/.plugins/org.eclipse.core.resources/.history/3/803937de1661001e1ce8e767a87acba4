@@ -1,0 +1,12 @@
+package Tag;
+
+import jakarta.servlet.jsp.tagext.TagSupport;
+
+public class MyTagHandler extends TagSupport {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

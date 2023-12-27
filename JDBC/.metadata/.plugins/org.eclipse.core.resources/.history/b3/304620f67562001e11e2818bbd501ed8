@@ -1,0 +1,7 @@
+package com.databaseConnection;
+
+public class DatabaseConnection {
+ public DatabaseConnection() {
+	// TODO Auto-generated constructor stub
+}
+}

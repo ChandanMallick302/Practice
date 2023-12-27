@@ -1,0 +1,22 @@
+package com.SelectTable;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class SelectTable {
+
+	Connection con
+	public void selectAll() throws Exception {
+		try {
+			DatabaseConnection db=new DatabaseConnection();
+			Connection con = db.getConnection();
+			con.createStatement();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			con.close();
+		}
+	}
+}

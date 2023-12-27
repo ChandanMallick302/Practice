@@ -1,0 +1,9 @@
+package com;
+
+public class CreateDatabaseConnection {
+
+	
+	public CreateDatabaseConnection() {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+	}
+}

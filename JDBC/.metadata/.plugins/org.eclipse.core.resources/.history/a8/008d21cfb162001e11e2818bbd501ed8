@@ -1,0 +1,12 @@
+package com.databaseconnection;
+
+public class Databaseconnecti {
+
+	public Databaseconnecti() throws Exception {
+//		Load the driver
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		//create connection
+		
+	}
+}

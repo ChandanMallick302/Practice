@@ -1,0 +1,68 @@
+package com.updateTable;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.databaseconnection.Databaseconnection;
+
+public class UpdateTable {
+
+	private Connection con;
+
+	public void updateAll() throws Exception {
+		try {
+			Databaseconnection db = new Databaseconnection();
+			this.con = db.getConnection();
+			PreparedStatement pstmt = con.prepareStatement("update teacher set id=?,name=?");
+			
+			pstmt.setInt(1, 1);
+			pstmt.setString(2, "xyz");
+			
+			int updateTable = pstmt.executeUpdate();
+
+			if (updateTable > 0) {
+				System.out.println("successfully updated");
+			} else {
+				System.out.println("Upadation failed");
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		} finally {
+			this.con.close();
+		}
+
+	}
+	
+	public void updateSpecific() throws Exception {
+		try {
+			Databaseconnection db = new Databaseconnection();
+			this.con = db.getConnection();
+			PreparedStatement pstmt = con.prepareStatement("update teacher set name=? whre id=?");
+			
+			pstmt.setString(2, "chadndan");
+			pstmt.setInt(1, 2);
+			
+			int updateTable = pstmt.executeUpdate();
+
+			if (updateTable > 0) {
+				System.out.println("successfully updated");
+			} else {
+				System.out.println("Upadation failed");
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		} finally {
+			this.con.close();
+		}
+
+	}
+	public static void main(String[] args)throws Exception {
+		UpdateTable u = new UpdateTable();
+//		u.updateAll();
+		u.updateSpecific();
+	}
+}

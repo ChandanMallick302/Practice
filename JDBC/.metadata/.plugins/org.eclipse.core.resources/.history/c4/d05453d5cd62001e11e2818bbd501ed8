@@ -1,0 +1,18 @@
+package com.selectTable;
+
+import java.sql.Connection;
+
+import com.databaseconnection.Databaseconnection;
+
+public class SelectTable {
+
+	public void selectAll() {
+		Databaseconnection db=new  Databaseconnection();
+		Connection con = db.getConnection();
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

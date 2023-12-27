@@ -1,0 +1,9 @@
+package ExceptionTest;
+
+public class Test1 {
+
+	public void testPrint() {
+		System.out.println("Inside the message");
+		TestMessage.print();
+	}
+}

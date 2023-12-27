@@ -1,0 +1,6 @@
+package TestSuite;
+
+@org.junit.platform.suite.api.Suite
+public class Main_TestSuite {
+	
+}

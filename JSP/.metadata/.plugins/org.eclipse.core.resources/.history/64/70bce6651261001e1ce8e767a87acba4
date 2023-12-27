@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	
+<!-- 	set jstl core tag -->
+<%@taglib prefix="c" uri="jakarta.tags.core"%>
+
+<!-- Error Handling settings -->
+<%@page errorPage="ErrorPage.jsp" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Error Handling</title>
+</head>
+<body>
+<h1 align="center">Error Handling</h1>
+<hr>
+	<%!
+	int n1 = 23;
+	int n2 = 0;
+	String content="dsds";
+	%>
+	
+	<%
+	int division=n1/n2;
+	content.length();
+	%>
+	<h1>Division = <%=division %></h1>
+</body>
+</html>

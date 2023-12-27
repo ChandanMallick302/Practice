@@ -1,0 +1,21 @@
+package com.InsertTable;
+
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class InsertIData_IntoTable {
+
+	public InsertIData_IntoTable() throws Exception {
+		try {
+			DatabaseConnection con = new DatabaseConnection();
+			Statement stmt = con.getStatement();
+			int insert = stmt.executeUpdate("insert into student(id,name)values((1,'Chandan'),(2,'Rajesh'))");
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

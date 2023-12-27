@@ -1,0 +1,41 @@
+package com.DeleteTable;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class DeleteTable {
+	public void DeleteAll() throws Exception {
+		try {
+			DatabaseConnection db = new DatabaseConnection();
+			Connection con = db.getConnection();
+			Statement stmt = con.createStatement();
+
+			int delete = stmt.executeUpdate("delete from student");
+
+			if (delete > 0) {
+				System.out.println("sucessfully deleted");
+			} else {
+				System.out.println("deletion failed");
+			}
+			con.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	private void deleteSpecific() {
+		// TODO Auto-generated method stub
+		
+	}
+	public static void main(String[] args) {
+		try {
+			DeleteTable d1 = new DeleteTable();
+//			d1.deleteAll();
+			d1.deleteSpecific();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename Java project &apos;Hibernate_Mapping_ManyToMany&apos; to &apos;Hibernate_Mapping_ManyToMany_And_ManyToAny&apos;&#x0D;&#x0A;- Original element: &apos;Hibernate_Mapping_ManyToMany&apos;&#x0D;&#x0A;- Renamed element: &apos;Hibernate_Mapping_ManyToMany&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Hibernate_Mapping_ManyToMany&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Hibernate_Mapping_ManyToMany" name="Hibernate_Mapping_ManyToMany_And_ManyToAny" references="true" stamp="1697260131319" version="1.0"/>
-</session>

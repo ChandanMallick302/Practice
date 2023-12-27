@@ -1,0 +1,30 @@
+package com.simplilearn.student;
+
+import java.util.Scanner;
+
+public class StudentMark {
+
+	public static void main(String[] args) {
+		//Declaring and initializing variables
+		Scanner sc =new Scanner(System.in);
+		float physics_marks,chemistry_marks,maths_marks;
+		
+		System.out.println("Enter Physics marks out of 100? ");
+		physics_marks=sc.nextFloat();
+		System.out.println("Enter Chemistry marks out of 100? ");
+		chemistry_marks=sc.nextFloat();
+		System.out.println("Enter Math marks out of 100? ");
+		maths_marks=sc.nextFloat();
+		
+		float total_marks=gettTotalMarks(physics_marks,chemistry_marks,maths_marks);
+		
+		
+	}
+
+	private static float gettTotalMarks(float physics_marks, float chemistry_marks, float maths_marks) {
+		//method to calculate total marks
+		float total_marks=physics_marks+chemistry_marks+maths_marks
+		return 0;
+	}
+	
+}

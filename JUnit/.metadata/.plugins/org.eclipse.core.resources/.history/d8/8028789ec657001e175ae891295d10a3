@@ -1,0 +1,22 @@
+package com.simplilearn.student;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class TestStudentMark {
+
+	@Test
+	public void test_getTotalMark(){
+		assertEquals(300.0, StudentMark.getTotalMarks(100, 100, 100),0.0f);
+	}
+	@Test(expected ="")
+	public void test_getTotalMarkAbove() {
+		StudentMark.getTotalMarks(1000, 1000,100);
+	}
+	@Test
+	public void test_getTotalMarkBellow() {
+		StudentMark.getTotalMarks(-1, -1, -1);
+	}
+
+}

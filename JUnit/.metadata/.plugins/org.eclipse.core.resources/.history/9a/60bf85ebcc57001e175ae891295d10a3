@@ -1,0 +1,30 @@
+package com.simplilearn.student;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.Test;
+
+public class TestStudentMark {
+
+	@Test
+	public void test_getTotalMark(){
+		assertEquals(300.0, StudentMark.getTotalMarks(100, 100, 100),0.0f);
+	}
+	@Test(expected =ArithmeticException.class)
+	public void test_getTotalMarkAbove() {
+		StudentMark.getTotalMarks(1000, 1000,100);
+	}
+	@Test(expected = ArithmeticException.class)
+	public void test_getTotalMarkBellow() {
+		StudentMark.getTotalMarks(-1, -1, -1);
+	}
+	@Test
+	public void test_getTotalMarksArithmeticCheck() {
+		StudentMark.getTotalMarks(10+20+30, 10-85, 45+45+98);
+	}
+	@Test
+	public void test_getGreade() {
+		StudentMark.getPercentage("A+", StudentMark.getGrade(90));
+	}
+
+}

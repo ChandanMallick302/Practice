@@ -1,0 +1,17 @@
+package com.UpdateTable;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class UpdateTable {
+
+	public UpdateTable() throws Exception {
+		DatabaseConnection db=new DatabaseConnection();
+		Connection con = db.getConnection();
+		Statement stmt = con.createStatement();
+		
+		stmt.executeUpdate("update student set ()")
+	}
+}

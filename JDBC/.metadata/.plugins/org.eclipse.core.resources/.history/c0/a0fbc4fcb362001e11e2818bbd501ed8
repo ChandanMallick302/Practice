@@ -1,0 +1,26 @@
+package com.CreateTable;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.databaseconnection.Databaseconnection;
+
+public class CreateTable {
+
+	private Connection con;
+	public CreateTable()throws Exception{
+		try {
+			Databaseconnection db=new Databaseconnection();
+			this.con = db.getConnection();
+			PreparedStatement pstmt = this.con.prepareStatement("");
+			
+			boolean execute = pstmt.execute();
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			this.con.close();
+		}
+	}
+}

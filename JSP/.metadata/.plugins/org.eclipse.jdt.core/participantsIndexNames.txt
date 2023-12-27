@@ -1,0 +1,23 @@
+INDEX VERSION 1.132
+D:\Practice\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1592859029.index
+\Important_tags_of_jsp\src
+D:\Practice\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2921290909.index
+\JSPDemo\src\main\java
+D:\Practice\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2670809132.index
+\Taglib_Directives\src\main\java
+D:\Practice\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\359861474.index
+\Removing .jsp from URL\src\main\java
+D:\Practice\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3962204980.index
+\Creating_custom_tags_in_jsp\src\main\java
+D:\Practice\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3229245578.index
+\Important_tags_of_jsp2\src\main\java
+D:\Practice\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\649351673.index
+\Taglib_Directive_Tag\src\main\java
+D:\Practice\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1355452023.index
+\Redirect_from_one_page_to_another_in_jsp\src\main\java
+D:\Practice\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3461416701.index
+\JSPDemo2\src\main\java
+D:\Practice\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2016874279.index
+\Directive_Tags_in_jsp\src\main\java
+D:\Practice\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1839083436.index
+\Error_Handling_in_Jsp\src\main\java

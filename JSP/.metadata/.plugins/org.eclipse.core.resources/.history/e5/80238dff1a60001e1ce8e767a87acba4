@@ -1,0 +1,40 @@
+<%@page import="java.util.Date"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Hello From HTML</h1>
+	<%="<h1>Hello From HTML</h1>"%>
+
+<!-- declaring variable -->
+	<%
+	int x = 10;
+	%>
+	
+<!-- Calling variable -->
+	<input type="text" value="<%=x%>">
+	<br>
+
+<!-- Adding a LOOP -->
+	<%
+	for (int i = 0; i < 5; i++) {
+		out.println("i = " + i + "<br>");
+	}
+	%>
+	
+<!-- 	includes form.html file -->
+<%@include file="form.html" %>
+	
+	
+<!-- 	Find the current date -->
+The current date & Time:  <h3><%=new Date() %></h3>
+
+<!-- including a new file -->
+<%@include file="footer.html" %>
+</body>
+</html>

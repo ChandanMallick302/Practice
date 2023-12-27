@@ -1,0 +1,7 @@
+package Tag;
+
+import jakarta.servlet.jsp.tagext.TagSupport;
+
+public class MyTagHandler extends TagSupport {
+
+}

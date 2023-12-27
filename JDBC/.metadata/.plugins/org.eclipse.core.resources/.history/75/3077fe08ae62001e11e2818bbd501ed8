@@ -1,0 +1,8 @@
+package com.SelectTable;
+
+public class SelectTable {
+
+	public SelectTable() {
+		// TODO Auto-generated constructor stub
+	}
+}

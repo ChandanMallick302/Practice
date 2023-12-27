@@ -1,0 +1,13 @@
+package com.simplilearn.student;
+
+import java.util.Scanner;
+
+public class StudentMark {
+
+	public static void main(String[] args) {
+		//Declaring and initializing variables
+		Scanner sc =new Scanner(System.in);
+		float physics_marks,chemistry_marks,maths_marks;
+	}
+	
+}

@@ -1,0 +1,9 @@
+package com.DeleteTable;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class DeleteTable {
+	public DeleteTable() {
+		DatabaseConnection db=new DatabaseConnection();
+	}
+}

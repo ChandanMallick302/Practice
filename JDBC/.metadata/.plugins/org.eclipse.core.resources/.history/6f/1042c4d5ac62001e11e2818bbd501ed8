@@ -1,0 +1,39 @@
+package com.DropTable;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class DropTable {
+
+	private Connection con;
+	public DropTable() throws Exception {
+		try {
+			DatabaseConnection db = new DatabaseConnection();
+			 = db.getConnection();
+			Statement stmt = con.createStatement();
+
+			int drop = stmt.executeUpdate("drop table abc");
+			if (drop > 0) {
+				System.out.println("Table is sucessfully dropped");
+			} else {
+				System.out.println("droping failed");
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		finally {
+			this.con.close();
+		}
+	}
+	
+	public static void main(String[] args) {
+		try {
+			new DropTable();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

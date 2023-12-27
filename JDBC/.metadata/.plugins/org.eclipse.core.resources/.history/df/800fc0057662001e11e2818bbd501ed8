@@ -1,0 +1,11 @@
+package com.databaseConnection;
+
+public class DatabaseConnection {
+ public DatabaseConnection() {
+	try{
+		
+	}catch (Exception e) {
+		// TODO: handle exception
+	}
+}
+}

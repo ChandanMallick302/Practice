@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Removing .jsp from URL">
+        <property name="context-root" value="Removing_.jsp_from_URL"/>
+        <property name="java-output-path" value="/Removing .jsp from URL/build/classes"/>
+    </wb-module>
+</project-modules>

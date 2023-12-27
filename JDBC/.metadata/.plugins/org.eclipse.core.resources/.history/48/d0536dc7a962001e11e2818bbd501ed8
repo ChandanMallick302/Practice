@@ -1,0 +1,27 @@
+package com.TruncateTable;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class TruncateTable {
+
+	public TruncateTable() throws Exception {
+		try {
+			DatabaseConnection db=new DatabaseConnection();
+			Connection con = db.getConnection();
+			Statement stmt = con.createStatement();
+			
+			int truncateTable = stmt.executeUpdate("Trancate student");
+			if(truncateTable>0) {
+				System.out.println("Table is Truncated, Now table is empty");
+			}else {
+				System.out.println("Truncation Failed");
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,41 @@
+package com.simplilearn.student;
+
+import java.util.Scanner;
+
+public class StudentMark {
+
+	public static void main(String[] args) {
+		// Declaring and initializing variables
+		Scanner sc = new Scanner(System.in);
+		float physics_marks, chemistry_marks, maths_marks;
+
+		System.out.println("Enter Physics marks out of 100? ");
+		physics_marks = sc.nextFloat();
+		System.out.println("Enter Chemistry marks out of 100? ");
+		chemistry_marks = sc.nextFloat();
+		System.out.println("Enter Math marks out of 100? ");
+		maths_marks = sc.nextFloat();
+
+		//getting total marks here
+		float total_marks = getTotalMarks(physics_marks, chemistry_marks, maths_marks);
+		System.out.println("Total marks of the student out of 300 is: "+total_marks);
+		
+		//getting total marks in percentage here
+		float total_percentage=getPercentage(physics_marks, chemistry_marks, maths_marks);
+		System.out.println("Percentage of marks is obtained is: "+total_marks);
+		
+	}
+
+	private static float getPercentage(float physics_marks, float chemistry_marks, float maths_marks) {
+		//method to calculate percentage
+		float total_percentage=((getTotalMarks(physics_marks, chemistry_marks, maths_marks))/300)*100;
+		return total_percentage;
+	}
+
+	private static float getTotalMarks(float physics_marks, float chemistry_marks, float maths_marks) {
+		// method to calculate total marks
+		float total_marks = physics_marks + chemistry_marks + maths_marks;
+		return total_marks;
+	}
+
+}

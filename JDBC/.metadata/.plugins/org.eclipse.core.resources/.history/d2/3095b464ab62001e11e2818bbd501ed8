@@ -1,0 +1,31 @@
+package com.DropTable;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class DropTable {
+
+	public DropTable() throws Exception {
+		DatabaseConnection db = new DatabaseConnection();
+		Connection con = db.getConnection();
+		Statement stmt = con.createStatement();
+
+		int update = stmt.executeUpdate("update student set id=2,name='Ramesh' where id=2");
+		if (update > 0) {
+			System.out.println("sucessfully updated");
+		} else {
+			System.out.println("updation failed");
+		}
+	}
+	
+	public static void main(String[] args) {
+		try {
+			new DropTable();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

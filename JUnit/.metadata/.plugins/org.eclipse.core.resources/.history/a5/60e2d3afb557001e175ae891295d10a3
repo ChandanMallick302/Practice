@@ -1,0 +1,10 @@
+package TestSuite;
+
+import org.junit.platform.suite.api.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+@Suite
+@SuiteClasses(@org.junit.platform.suite.api.Suite)
+public class Main_TestSuite {
+	
+}

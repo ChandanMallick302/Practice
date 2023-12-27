@@ -1,0 +1,27 @@
+package com.DeleteTable;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.databaseConnection.DatabaseConnection;
+
+public class DeleteTable {
+	public DeleteTable() throws Exception {
+		try {
+			DatabaseConnection db=new DatabaseConnection();
+			Connection con = db.getConnection();
+			Statement stmt = con.createStatement();
+			
+			int delete = stmt.executeUpdate("delete from student where id=2");
+			
+			if(delete>1) {
+				System.out.println("sucessfully deleted");
+			}else {
+				System.out.println("delition failed");
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
