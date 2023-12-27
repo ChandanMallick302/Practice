@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" th:fragment="layout(title,content)">
+<head>
+<meta charset="UTF-8">
+<title th:replace="${title}"></title>
+</head>
+<body>
+<h1>Header</h1>
+<hr>
+<div th:insert="${content}"></div>
+<hr>
+<h1>Footer</h1>
+</body>
+</html>

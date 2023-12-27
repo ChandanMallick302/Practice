@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 align="center">Thymeleaf Tutorials</h1>
+	<hr>
+	Variable Expression: 
+	<br>
+	<h2>
+		without thymeleaf name-space : <span
+			data-th-text="#{user.name}"></span>
+	</h2>
+	<h3>
+		with name-space : <span th:text="#{user.name}"></span>
+	</h3>
+	<h3>
+		Displaying variable : <span>[[${today}]]</span>
+	</h3>
+	<h3>
+		Displaying variable : <span th:text="${today}"></span>
+	</h3>
+	
+<!-- 	<h3>ID: [[${user1.id}]]</h3> -->
+<!-- 	<h3>Name: [[${user1.name}]]</h3> -->
+<!-- 	<h3>Address: [[${user1.address}]]</h3> -->
+        <h3 th:text="${user1.id}"></h3>
+        <h3 th:text="${user1.name}"></h3>
+        <h3 th:text="${user1.address}"></h3>
+	
+	Selection Expression:
+	<br>
+	<div th:object="${user2}">
+	<h3>[[*{id}]]</h3>
+	<h3>[[*{name}]]</h3>
+	<h3>[[*{address}]]</h3>
+	</div>
+	<a th:href="@{'profile/'+${user1.id}}">Profile</a>
+	<br>
+	<a th:href="@{profile}">Profile</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<!-- <html> -->
+<head>
+<meta charset="UTF-8">
+<title>Register Page</title>
+</head>
+<body>
+	<h1 align="center">Register Page</h1>
+	<section>
+	<div align="center">
+	<th:bolck th:if="${session.msg}">[[${session.msg}]]</th:bolck>
+	<th:block th:text="${@userService.removeSessionMessage()}"></th:block>
+
+		<form action="saveUser" method="post">
+		<label >Enter User name</label>&nbsp;
+		<input name="name" type="text" placeholder="Enter Name"><br><br>
+		
+		<label >Enter User email</label>&nbsp;
+		<input name="email" type="email" placeholder="Enter Email"><br><br>
+		
+		<label >Enter User password</label>&nbsp;
+		<input name="password" type="password" placeholder="Enter Password"><br><br>
+		
+		<select name="role">
+		<option selected="selected">Select User Role</option>
+		<option value="ROLE_USER">User</option>
+		<option value="ROLE_ADMIN">Admin</option>
+		</select><br><br>
+		
+		<input type="submit">
+		</form>
+		</div>
+	</section>
+</body>
+</html>
