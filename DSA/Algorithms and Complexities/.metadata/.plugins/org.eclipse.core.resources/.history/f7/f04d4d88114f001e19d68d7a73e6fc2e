@@ -1,0 +1,15 @@
+
+public class BinarytoDecimal {
+
+	public int covertingToDecimal(String binary) {
+		int conversion=0;
+		int result=0;
+		
+		return 0;
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package Calculating_TimeComplexity_of_Polynomial_Algorithm_BigO;
+
+public class Test1 {
+	
+	public void print(int n) {
+		for(int i=1;i<=n;i++) {
+			System.out.println("Stating of outer loop");
+			for(int j=1;j<=n;j++) {
+				System.out.println("Stating of inner loop");
+				System.out.println("i= "+i+" j= "+j);
+			}
+			System.out.println("End of inner loop");
+		}
+		System.out.println("End of outer loop");
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

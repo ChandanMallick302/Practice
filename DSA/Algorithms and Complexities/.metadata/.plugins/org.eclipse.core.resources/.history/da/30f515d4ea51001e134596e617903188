@@ -1,0 +1,13 @@
+package resize_an_Array;
+
+public class Resize_an_Array {
+
+	public void printArray() {
+		
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+}

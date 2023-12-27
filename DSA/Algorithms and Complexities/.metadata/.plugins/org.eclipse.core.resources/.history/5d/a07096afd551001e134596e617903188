@@ -1,0 +1,16 @@
+package Reverse_an_Array;
+
+public class ReverseArray {
+
+	public static void printArray(int[] arr) {
+		for() {
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

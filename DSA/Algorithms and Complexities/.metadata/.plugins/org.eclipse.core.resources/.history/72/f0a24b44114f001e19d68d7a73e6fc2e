@@ -1,0 +1,12 @@
+
+public class BinarytoDecimal {
+
+	public int covertingToDecimal(String binary) {
+		
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

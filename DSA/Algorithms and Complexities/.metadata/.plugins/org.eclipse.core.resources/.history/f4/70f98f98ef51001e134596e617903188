@@ -1,0 +1,12 @@
+package Find_the_Missing_Number_in_an_Array;
+
+public class Find_the_Missing_Number_in_an_Array {
+
+	public void demoArray() {
+		int arr[]= {1,2,3,5};
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package Adding_or_Updating_elements_in_a_One_Dimensional_Array;
+
+public class ArrayUtil {
+
+	public void printArray() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package move_Zeroes_to_end_of_an_Array;
+
+public class move_Zeroes_to_end_of_an_Array {
+
+	public static void printArray(int arr[]) {
+		for(int i=0;i<arr.length;i++) {
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+	}
+	public static int moveZeros(int arr[],int n) {
+		
+		return 0;
+	}
+	
+	public static void main(String[] args){
+		int arr[]= {0,1,0,4,12};
+		printArray(arr);
+		
+	}
+
+}

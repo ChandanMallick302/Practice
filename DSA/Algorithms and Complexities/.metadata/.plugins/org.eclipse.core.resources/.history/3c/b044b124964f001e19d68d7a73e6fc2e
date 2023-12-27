@@ -1,0 +1,42 @@
+package TimeComplexity;
+
+class Program1 {
+	public int findSum(int n) {
+		return n * (n + 1) / 2;
+	}
+}
+
+class Program2 {
+	public int findSum(int n) {
+		int sum = 0;
+		for (int i = 1; i <= n; i++) {
+			sum = sum + i;
+		}
+		return sum;
+	}
+}
+
+public class Demo1_FindSumOfNatualnumber {
+
+	public static void main(String[] args) {
+		double now=System.currentTimeMillis();
+		Program1 p1=new Program1();
+		System.out.println(p1.findSum(5));
+		System.out.println("Time taken "+(System.currentTimeMillis()-now)+" milli seconds");
+		System.out.println("+++++++++++++++++++++++++++++++++++++");
+		
+		double now2=System.currentTimeMillis();
+		Program2 p2=new Program2();
+		System.out.println(p2.findSum(5));
+		System.out.println("Time taken "+(System.currentTimeMillis()-now2)+" milli seconds");
+	
+		double now3=System.currentTimeMillis();
+		Demo1_FindSumOfNatualnumber p3=new Demo1_FindSumOfNatualnumber();
+		System.out.println(p3.findSum(5));
+		System.out.println("Time taken "+(System.currentTimeMillis()-now3)+" milli seconds");
+	}
+	public int findSum(int n) {
+		return n * (n + 1) / 2;
+	}
+
+}

@@ -1,0 +1,28 @@
+package Reverse_an_Array;
+
+public class ReverseArray {
+
+	public static void printArray(int[] arr) {
+		for(int i=0;i<arr.length;i++) {
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+	}
+	public static void reverseArray(int numbers[],int start,int end) {
+		while(start<end) {
+			int temp=numbers[start];
+			//swaping end value to start
+			numbers[start]=numbers[end];
+			//swapping start value to end
+			numbers[end]=temp;
+		}
+	}
+	
+	public static void main(String[] args) {
+		int numbers[]= {2,11,5,10,7,8};
+		printArray(numbers);
+		reverseArray(numbers, 0, numbers.length-1);
+
+	}
+
+}

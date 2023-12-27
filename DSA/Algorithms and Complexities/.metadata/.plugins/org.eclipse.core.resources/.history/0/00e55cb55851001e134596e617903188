@@ -1,0 +1,30 @@
+package Adding_or_Updating_elements_in_a_One_Dimensional_Array;
+
+public class ArrayUtil {
+
+	public void printArray(int[]arr) {
+		int n=arr.length;
+		for(int i=0;i<n;i++) {
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+	}
+	
+	public void arrayDemo() {
+		int[] myArray=new int[5];
+		myArray[0]=5;//5 0 0 0 0 
+		myArray[1]=1;//5 1 0 0 0 
+		myArray[2]=8;//5 1 8 0 0 
+		myArray[3]=2;//5 1 8 2 4 
+		myArray[4]=10;//5 1 8 2 4 
+		myArray[2]=9;//5 1 9 2 10
+//		myArray[5]=10;
+		printArray(myArray);
+	}
+	public static void main(String[] args) {
+		ArrayUtil a1=new ArrayUtil();
+		a1.arrayDemo();
+
+	}
+
+}

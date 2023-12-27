@@ -1,0 +1,18 @@
+
+public class BinarytoDecimal {
+
+	public int covertingToDecimal(String binary) {
+		int conversion=0;
+		int result=0;
+		for(int i=0;i<=binary.length();i++) {
+			result+=conversion;
+			
+		}
+		return 0;
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

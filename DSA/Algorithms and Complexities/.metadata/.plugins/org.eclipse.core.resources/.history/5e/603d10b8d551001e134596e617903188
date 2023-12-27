@@ -1,0 +1,16 @@
+package Reverse_an_Array;
+
+public class ReverseArray {
+
+	public static void printArray(int[] arr) {
+		for(int) {
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		int numbers[]= {2,11,5,10,7,8};
+
+	}
+
+}

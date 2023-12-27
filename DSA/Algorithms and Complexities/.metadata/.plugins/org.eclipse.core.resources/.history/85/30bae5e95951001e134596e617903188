@@ -1,0 +1,8 @@
+package print_elements_of_an_Array;
+
+public class ArrayUtil {
+
+	public void printArray(int arr[]) {
+		
+	}
+}

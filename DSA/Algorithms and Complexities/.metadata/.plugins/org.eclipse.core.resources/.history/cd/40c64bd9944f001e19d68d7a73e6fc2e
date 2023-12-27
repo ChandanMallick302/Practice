@@ -1,0 +1,22 @@
+package TimeComplexity;
+
+class Program1{
+	public int findSum(int n) {
+		return n*(n+1)/2;
+	}
+}
+class Program2{
+	public int findSum(int n) {
+		int sum=0;
+		return sum;
+	}
+}
+public class Demo1_FindSumOfNatualnumber {
+
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

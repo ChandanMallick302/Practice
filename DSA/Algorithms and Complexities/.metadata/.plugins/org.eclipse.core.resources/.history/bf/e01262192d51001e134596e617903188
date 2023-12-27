@@ -1,0 +1,25 @@
+package Calculating_TimeComplexity_of_Linear_Algorithm;
+
+
+public class Test1 {
+
+	public int findSum(int n) {
+		int sum=0;//1 step of intialization =1
+		for(int i=1;i<=n;i++) { //1+3(n+1)+3n=6n+4
+			sum=sum+i;// n step of arithmatic operation =4n
+		}
+		return sum;// 1 step of returning sum 1+1=2
+		//total time complex T=1+6n+4+4n+2
+		//T=10n+7
+		//T=O(N)
+	}
+	
+	public static void main(String[] args) {
+		double now = System.currentTimeMillis();
+		Test1 t1 = new Test1();
+		t1.findSum(5);
+		System.out.println("(Time taken " + (System.currentTimeMillis() - now) + " milli seconds");
+
+	}
+
+}

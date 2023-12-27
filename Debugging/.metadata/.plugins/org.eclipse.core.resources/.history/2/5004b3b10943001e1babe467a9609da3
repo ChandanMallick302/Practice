@@ -1,0 +1,14 @@
+package com.debug.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MyController {
+
+	public String getAbout() {
+		String str="Hello World!!";
+		str=str.toLowerCase();
+		str=str.toLowerCase();
+		return str;
+	}
+}

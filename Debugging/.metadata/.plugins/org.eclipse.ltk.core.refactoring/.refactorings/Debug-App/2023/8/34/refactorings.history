@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.debug.Test&apos; to &apos;Simple_Java_Program_Debug_Test&apos;&#x0D;&#x0A;- Original project: &apos;Debug-App&apos;&#x0D;&#x0A;- Original element: &apos;com.debug.Test&apos;&#x0D;&#x0A;- Renamed element: &apos;com.debug.Simple_Java_Program_Debug_Test&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Test&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.debug{Test.java[Test" matchStrategy="1" name="Simple_Java_Program_Debug_Test" qualified="false" references="true" similarDeclarations="false" stamp="1692942725212" textual="false" version="1.0"/>
+</session>

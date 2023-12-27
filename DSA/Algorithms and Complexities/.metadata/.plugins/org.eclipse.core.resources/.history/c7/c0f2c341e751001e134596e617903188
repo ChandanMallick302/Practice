@@ -1,0 +1,15 @@
+package move_Zeroes_to_end_of_an_Array;
+
+public class move_Zeroes_to_end_of_an_Array {
+
+	public static void printArray(int arr[]) {
+		
+		
+	}
+	
+	public static void main(String[] args){
+		int arr[]= {0,1,0,4,12};
+		printArray(arr);
+	}
+
+}

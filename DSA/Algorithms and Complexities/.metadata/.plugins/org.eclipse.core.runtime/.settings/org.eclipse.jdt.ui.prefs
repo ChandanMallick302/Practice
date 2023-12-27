@@ -1,0 +1,11 @@
+content_assist_favorite_static_members=org.assertj.core.api.Assertions.*;org.mockito.Matchers.*;org.mockito.Mockito.*;org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders.*;org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.*;org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers.*;org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.*;org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.*;org.springframework.test.web.client.match.MockRestRequestMatchers.*;org.springframework.test.web.client.response.MockRestResponseCreators.*;org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;org.hamcrest.CoreMatchers.*;org.junit.Assert.*
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="Calculating_TimeComplexity_of_Constant_Algorithm.Test1"><rhs name\="Calculating_TimeComplexity_of_Constant_Algorithm.Test1"/></lhs><lhs name\="Adding_or_Updating_elements_in_a_One_Dimensional_Array.ArrayUtil"><rhs name\="Adding_or_Updating_elements_in_a_One_Dimensional_Array.ArrayUtil"/></lhs><lhs name\="print_elements_of_an_Array.ArrayUtil"><rhs name\="print_elements_of_an_Array.ArrayUtil"/></lhs><lhs name\="Find_Minimum_value_of_an_Array.MinimumArrayValue"><rhs name\="Find_Minimum_value_of_an_Array.MinimumArrayValue"/></lhs><lhs name\="resize_an_Array.Resize_an_Array"><rhs name\="resize_an_Array.Resize_an_Array"/></lhs></history>
+content_assist_number_of_computers=19
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=23
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

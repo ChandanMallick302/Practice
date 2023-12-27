@@ -1,0 +1,11 @@
+package Calculating_TimeComplexity_of_Linear_Algorithm;
+
+public class Test1 {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

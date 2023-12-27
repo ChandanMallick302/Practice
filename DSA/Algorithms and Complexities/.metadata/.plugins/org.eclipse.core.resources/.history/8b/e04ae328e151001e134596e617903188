@@ -1,0 +1,20 @@
+package Find_Second_Maximum_value_in_an_Array;
+
+public class Find_Second_Maximum_value {
+
+	public static void printArray(int arr[]) {
+		for(int i=0;i<arr.length;i++) {
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		int arr[]= {12,34,2,34,33,1};
+		printArray(arr);
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package Calculating_TimeComplexity_of_Constant_Algorithm;
+
+public int findSum(int x,int y) {
+	sum=x+y;
+	return sum;
+}
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

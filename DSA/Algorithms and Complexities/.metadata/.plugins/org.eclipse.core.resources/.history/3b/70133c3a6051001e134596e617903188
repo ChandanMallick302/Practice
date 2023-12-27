@@ -1,0 +1,26 @@
+package Remove_Even_Integers_from_an_Array;
+
+public class RemoveEvenInteger {
+
+	public void printArray(int arr[]) {
+		int n=arr.length;
+		for(int i=1;i<n;i++) {
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+	}
+	
+	public static int[] removedEven(int arr[]) {
+		int oddCount=0;
+		for() {
+			
+		}
+		return null;
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,13 @@
+
+public class BinarytoDecimal {
+
+	public int covertingToDecimal(String binary) {
+		
+		return 0;
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}
