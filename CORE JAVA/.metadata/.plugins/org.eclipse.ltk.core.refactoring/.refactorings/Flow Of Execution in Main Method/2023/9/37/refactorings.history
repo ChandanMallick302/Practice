@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Static_Block&apos; to &apos;Flow_Of_Execution&apos;&#x0D;&#x0A;- Original project: &apos;Flow Of Execution in Main Method&apos;&#x0D;&#x0A;- Original element: &apos;Flow Of Execution in Main Method/src/Static_Block&apos;&#x0D;&#x0A;- Renamed element: &apos;Flow Of Execution in Main Method/src/Flow_Of_Execution&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Static_Block&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Static_Block" name="Flow_Of_Execution" qualified="false" references="true" stamp="1694765753668" textual="false" version="1.0"/>
+</session>

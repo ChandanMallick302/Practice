@@ -1,0 +1,62 @@
+package Calling_Steam_Object;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.TreeSet;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class Calling_Steam_Object {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//Stream Api - Collection of object
+		//collection / group of object
+		
+		//1. Blank Stream
+		
+		Stream<Object> emptyStream = Stream.empty();
+		emptyStream.sorted();
+		
+		//2. Array, object, collection
+		String name[]={"Chandan","suresh","Rajesh"};
+		// to make the above array to stream object
+		Stream<String> stream1 = Stream.of(name);
+		stream1.sorted().forEach(e->{System.out.println(e);});
+		
+		//3. using builder pattern 
+		Stream<Object> streamBuilder = Stream.builder().build();
+		streamBuilder.forEach(e->{System.out.println(e);});
+		
+		//4. Arrays Stream method
+		IntStream intStream = Arrays.stream(new int[] {2,4,5,97,78});
+		intStream.forEach(e->{System.out.println(e);});
+		
+		//5. List, Set
+		
+		List<Integer> list = new ArrayList<>();
+		list.add(12);
+		list.add(34);
+		list.add(23);
+		list.add(28);
+		list.add(45);
+		
+		Stream<Integer> Liststream = list.stream();
+		Liststream.forEach(e->{System.out.println(e);});
+		
+		TreeSet<Integer> treeSet = new TreeSet<>();
+		treeSet.add(12);
+		treeSet.add(34);
+		treeSet.add(23);
+		treeSet.add(28);
+		treeSet.add(45);
+		
+		Stream<Integer> Setstream = treeSet.stream();
+		Setstream.forEach(e->{System.out.println(e);});
+	}
+
+}

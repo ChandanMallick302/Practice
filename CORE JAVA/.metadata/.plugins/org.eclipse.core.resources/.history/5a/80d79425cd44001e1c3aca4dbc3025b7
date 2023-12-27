@@ -1,0 +1,12 @@
+package package_a;
+
+public class A {
+
+	private String a="Hello";//private
+	int b=10;//Default
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

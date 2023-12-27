@@ -1,0 +1,20 @@
+package SortedMap;
+
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class TreeMap_SortedMap {
+	public static void main(String[] args) {
+		SortedMap<Integer, String> tsm = new TreeMap<Integer, String>();
+
+		// Adding Key and objects
+		tsm.put(1, "Apple");
+		tsm.put(4, "Orange");
+		tsm.put(2, "Mango");
+		tsm.put(1, "Grapes");
+		
+		System.out.println(tsm);
+		
+		//TreeMap is the child of SortedMap
+	}
+}

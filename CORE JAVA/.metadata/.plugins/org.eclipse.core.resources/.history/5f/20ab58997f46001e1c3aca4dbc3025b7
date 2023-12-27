@@ -1,0 +1,19 @@
+package Type_Safe;
+
+public class TypeSafe {
+	private Object value;
+	
+
+
+	public static void main(String[] args) {
+		
+		TypeSafe<String> t1=new TypeSafe<>();
+
+		
+		//Here no type is mention so you can use any type of data
+		
+		
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package Static_Method;
+
+public class Static_Method {
+
+	static int a=10;
+	void m1() {
+		
+	}
+}

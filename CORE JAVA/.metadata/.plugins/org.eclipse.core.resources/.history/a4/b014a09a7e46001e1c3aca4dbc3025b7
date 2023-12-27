@@ -1,0 +1,52 @@
+package Un_Type_Safe;
+
+import Type_Safe.TypeSafe;
+
+public class private Object value;
+private int id;
+
+
+public Object getValue() {
+	return value;
+}
+
+
+public void setValue(Object value) {
+	this.value = value;
+}
+
+
+public int getId() {
+	return id;
+}
+
+
+public void setId(int id) {
+	this.id = id;
+}
+
+
+public static void main(String[] args) {
+	
+	TypeSafe t1=new TypeSafe();
+	t1.setValue("dsdsd");
+	t1.setId(1);
+	System.out.println(t1.getId()+" "+t1.getValue());
+	
+	TypeSafe t2=new TypeSafe();
+	t2.setValue(51545);
+	t2.setId(1);
+	System.out.println(t2.getId()+" "+t2.getValue());
+	
+	//Here no type is mention so you can use any type of data
+	
+	
+
+} {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

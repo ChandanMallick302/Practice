@@ -1,0 +1,20 @@
+package Generics;
+
+import java.util.HashSet;
+
+public class Generic_Collection {
+
+	public static void main(String[] args) {
+		
+		//Creating type-safe generic collection
+		HashSet<Double> hs=new HashSet();
+		
+		hs.add(454.878);
+		hs.add((5646.99));
+		
+		System.out.println()
+		
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package Nested_Interface;
+interface showable{
+	void show();
+	interface message{
+		void msg();
+	}
+}
+public class NestedInterface implements showable.message {
+
+	@Override
+	public void msg() {
+		// TODO Auto-generated method stub
+		
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

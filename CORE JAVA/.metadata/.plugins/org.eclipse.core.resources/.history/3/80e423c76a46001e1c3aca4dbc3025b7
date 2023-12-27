@@ -1,0 +1,16 @@
+package SortedMap;
+
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class TreeMap_SortedMap {
+	public static void main(String[] args) {
+		SortedMap<Integer, String> lhm = new TreeMap();
+
+		// Adding Key and objects
+		lhm.put(1, "Apple");
+		lhm.put(4, "Orange");
+		lhm.put(2, "Mango");
+		lhm.put(1, "Grapes");
+	}
+}

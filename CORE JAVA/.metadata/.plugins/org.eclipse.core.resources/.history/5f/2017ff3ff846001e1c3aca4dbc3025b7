@@ -1,0 +1,64 @@
+package synchronization_of_thread;
+
+class A extends Thread {
+	synchronization_of_thread s;
+
+	public A(synchronization_of_thread s) {
+		// TODO Auto-generated constructor stub
+		this.s = s;
+	}
+
+	public void run() {
+		int i=1; //for setting priority
+		while(true) {
+			System.out.println("Produce " + this.s.produced_item(i));
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+class B extends Thread {
+
+	synchronization_of_thread s1;
+
+	public B(synchronization_of_thread s1) {
+		this.s1 = s1;
+	}
+
+	public void run() {
+		while(true) {
+			this.s1.consumed_item();
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+public class synchronization_of_thread {
+
+	int i;
+	
+	synchronized public int produced_item(int i) {
+		this.i=i;
+		System.out.println("Produce "+i);
+		return i;
+	}
+	synchronized public void consumed_item() {
+		System.out.println("Consumed "+i);
+	}
+	public static void main(String[] args) {
+		synchronization_of_thread s=new synchronization_of_thread();
+		A a=new A(s);
+		B a=new B(s);
+
+	}
+}

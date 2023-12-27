@@ -1,0 +1,22 @@
+package Defining_the_Aarray_Size;
+
+public class Sizing_the_Aarray {
+
+	public static void main(String[] args) {
+		// Defining the size of array
+		int[] arr = new int[5];
+		arr[0] = 0;
+		arr[1] = 1;
+		arr[2] = 2;
+		arr[3] = 3;
+		arr[4] = 4;
+//		arr[5]=5; // due to sizing define to 5 so arr[5] is provide ArrayIndexOutOfBoundsException
+//		for (int a : arr) {
+//			System.out.println(a);
+//		}
+		for(int i;i==arr.length;i++) {
+			
+		}
+
+	}
+}

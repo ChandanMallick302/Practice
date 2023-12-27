@@ -1,0 +1,11 @@
+package Member_Inner_class;
+
+class Outer {
+
+	private int data=30;
+	class inner{
+		void msg() {
+			
+		}
+	}
+}

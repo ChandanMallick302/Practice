@@ -1,0 +1,7 @@
+package package_b;
+
+import package_a.A;
+
+public class E__Differnt_PackageNonSubClass extends A{
+
+}

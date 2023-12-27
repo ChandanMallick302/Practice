@@ -1,0 +1,30 @@
+package polymerphysim;
+class Animal{
+	public void color() {
+		System.out.println("Color is");
+	}
+	public void eat() {
+		System.out.println("Eating ");
+	}
+}
+class Dog extends Animal{
+
+	@Override
+	public void color() {
+		// TODO Auto-generated method stub
+		super.color();
+	}
+	@Override
+	public void eat() {
+		// TODO Auto-generated method stub
+		super.eat();
+	}
+}
+// Here jvm will choose which one going to be run
+public class RunTimePolymerphysim_OverRidding {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

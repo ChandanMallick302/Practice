@@ -1,0 +1,10 @@
+package Exception_Handling;
+
+public class UnChecked_Exception {
+
+	public static void main(String[] args) {
+		int n1 = Integer.parseInt(args[0]);
+		Integer.parseInt(args[a]);
+	}
+
+}

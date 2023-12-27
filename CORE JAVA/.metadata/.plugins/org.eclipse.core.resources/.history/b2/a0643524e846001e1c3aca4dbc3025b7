@@ -1,0 +1,8 @@
+package Assignment;
+
+public class Implementing_All_Methods_of_Thread {
+	
+	public static void main(String[] args) {
+		
+	}
+}

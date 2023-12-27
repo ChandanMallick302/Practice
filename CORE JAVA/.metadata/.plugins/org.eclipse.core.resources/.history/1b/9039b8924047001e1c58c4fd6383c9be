@@ -1,0 +1,29 @@
+package file_Operation;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+public class Copy_content_from_one_file_to_another_file {
+
+	public static void main(String[] args) {
+		try {
+			//To read the file1 data
+			FileInputStream file1=new FileInputStream("src/file_storage/Java.txt");
+			
+			//copy the data from file1 to file2
+			File file2=new File("src/file_storage/Java2.txt");
+			try {
+				fil
+				
+			}finally {
+				
+			}
+			
+			
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+
+}

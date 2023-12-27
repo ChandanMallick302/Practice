@@ -1,0 +1,19 @@
+package Anonymous_inner_class;
+abstract class Person{
+	abstract void eat();
+}
+
+class AnonymousInner_ByAbstractClass {
+
+	public static void main(String[] args) {
+		Person p1=new Person() {
+			
+			@Override
+			void eat() {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+	}
+
+}

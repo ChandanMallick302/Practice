@@ -1,0 +1,26 @@
+package Assignment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Employee{
+	private String name;
+	
+	void setName(String name) {
+		this.name=name;
+	}
+
+	String getName() {
+		return name;
+	}
+	
+}
+public class Add_Element_by_object {
+
+	public static void main(String[] args) {
+		List<Employee> emp=new ArrayList<Employee>();
+		emp.add()
+
+	}
+
+}

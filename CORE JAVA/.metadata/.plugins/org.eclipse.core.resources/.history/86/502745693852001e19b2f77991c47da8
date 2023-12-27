@@ -1,0 +1,11 @@
+package stream_api;
+
+public class StreamMain1 {
+
+	public static void main(String[] args) {
+		
+		//Q:- Create a List Filter all even number from List  
+
+	}
+
+}

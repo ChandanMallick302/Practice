@@ -1,0 +1,15 @@
+package Serialization;
+
+public class Student {
+
+	private String name;
+	private String email;
+	private int age;
+	private String address;
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

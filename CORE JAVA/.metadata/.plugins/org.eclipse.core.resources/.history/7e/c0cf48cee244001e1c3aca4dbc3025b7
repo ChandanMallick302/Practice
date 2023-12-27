@@ -1,0 +1,14 @@
+package Custom_Exception;
+
+public class Test {
+
+	public static int age = 18;
+
+	public static void main(String[] args) {
+		AgeInvalidException aeAgeInvalidException=new AgeInvalidException();
+		try {
+		if(age>18) {
+		}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+package Checked_Exception_Handling;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+public class IO_Expecption_Handling {
+
+	public static void main(String[] args)throws IOException {
+		
+		System.out.println("Program Started...");
+			FileReader fr= new FileReader("");
+
+			System.out.println("Progam terminated");
+
+	}
+
+}

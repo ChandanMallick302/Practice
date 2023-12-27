@@ -1,0 +1,18 @@
+package Checked_Exception_Handling;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class FileNotFoundException_Exception_Handling {
+
+	public static void main(String[] args) {
+		try {
+			FileInputStream f=new FileInputStream("");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

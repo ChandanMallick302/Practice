@@ -1,0 +1,21 @@
+package Multiple_Exception_Handling;
+
+public class Multiple_Exception_Handling {
+
+	
+	public static void main(String[] args) {
+	String s[]= {"a","5454"};
+	int n1 = Integer.parseInt(s[0]);
+	int n2 = Integer.parseInt(s[1]);
+	int result=n1/n2;
+	try {
+		System.out.println(result);
+	}
+	catch (NumberFormatException n) {
+	}
+	catch (ArrayIndexOutOfBoundsException e) {
+		// TODO: handle exception
+	}
+	}
+
+}

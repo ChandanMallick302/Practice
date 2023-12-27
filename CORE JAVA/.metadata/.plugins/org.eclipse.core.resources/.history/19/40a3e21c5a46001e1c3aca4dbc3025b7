@@ -1,0 +1,17 @@
+package Assignment;
+
+class Employee{
+	private String name;
+	
+	void setName(String name) {
+		
+	}
+}
+public class Add_Element_by_object {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

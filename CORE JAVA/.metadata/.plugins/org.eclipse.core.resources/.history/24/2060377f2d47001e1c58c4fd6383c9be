@@ -1,0 +1,10 @@
+package file_Operation;
+
+public class Fetching_File_Information {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

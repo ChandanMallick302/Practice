@@ -1,0 +1,8 @@
+package Unboxing;
+
+public class Object_To_Primitive {
+
+	public static void main(String[] args) {
+		Integer i=new Integer(100);
+	}
+}

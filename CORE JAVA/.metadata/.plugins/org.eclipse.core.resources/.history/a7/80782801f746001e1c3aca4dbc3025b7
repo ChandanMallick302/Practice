@@ -1,0 +1,36 @@
+package synchronization_of_thread;
+
+class A extends Thread {
+	synchronization_of_thread s;
+
+	public A(synchronization_of_thread s) {
+		// TODO Auto-generated constructor stub
+		this.s = s;
+	}
+
+	public void run(int i) {
+		this.i = i;
+		System.out.println("Produce " + i);
+	}
+}
+
+class B extends Thread {
+
+	synchronization_of_thread s1;
+
+	public B(synchronization_of_thread s1) {
+		this.s1 = s1;
+	}
+
+	public void run() {
+		System.out.println("Consume " + this.s1);
+	}
+}
+
+public class synchronization_of_thread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}

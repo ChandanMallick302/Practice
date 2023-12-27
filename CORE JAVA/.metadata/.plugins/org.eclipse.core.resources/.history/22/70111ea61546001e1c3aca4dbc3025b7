@@ -1,0 +1,16 @@
+package Set_Collection;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashSet_Set {
+
+	public static void main(String[] args) {
+		int arr[]= {1,2,5,1,4,6};
+		
+		Set<Integer> set=new HashSet<>();
+		set.addAll());
+
+	}
+
+}

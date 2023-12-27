@@ -1,0 +1,33 @@
+package Assignment_Of_Array;
+
+public class Muultiplication_of_2_Matrices {
+
+	public static void main(String[] args) {
+		// creating two matrixes
+		int a[][] = { { 1, 1, 1 }, { 2, 2, 2 }, { 3, 3, 3 } };
+		int b[][] = { { 1, 1, 1 }, { 2, 2, 2 }, { 3, 3, 3 } };
+
+		// creating a matrix which will store multiplication of two matrix
+		int c[][] = new int[3][3];
+
+		// multiplication of two matrix in loop
+		// for row i=3
+		// for column j=3
+		// for column no k=3 inside column j
+
+		// for row i
+		for (int i = 0; i < 3; i++) {
+			// for column j
+			for (int j = 0; j < 3; j++) {
+				// for go inside the column position k of j
+				for (int k = 0; k < 3; k++) {
+					// multiplying row and column of a & b
+					c[i][j] += a[i][k] * b[k][j];
+				}
+				System.out.print(c[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+
+}

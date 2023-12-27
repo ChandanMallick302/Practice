@@ -1,0 +1,27 @@
+package LocalDate_class;
+
+import java.time.LocalDate;
+
+//Java LocalDate class is an immutable class that represents Date with a default format of yyyy-mm-dd.
+public class LocalDateExample1 {
+
+	public static void main(String[] args) {
+		LocalDate date = LocalDate.now();
+
+		// Find Current,yesterday,tomorrow Date
+		System.out.println("Today is " + date);
+		System.out.println("Yesterday is " + date.minusDays(1));
+		System.out.println("Tomorrow is " + date.plusDays(1));
+
+		// Find Current,pre&post Year
+		System.out.println("Current Year is " + date);
+		System.out.println("PreYear is " + date.minusYears(1));
+		System.out.println("PostYear is " + date.plusYears(1));
+
+		// Find Current,pre&post Week
+		System.out.println("Current Week is " + date);
+		System.out.println("PreWeek is " + date.minusWeeks(1));
+		System.out.println("PostWeek is " + date.plusWeeks(1));
+	}
+
+}

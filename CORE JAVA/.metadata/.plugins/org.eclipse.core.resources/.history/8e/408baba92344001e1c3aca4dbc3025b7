@@ -1,0 +1,22 @@
+package superKeyWord;
+
+class B{
+	String i;
+	public B() {
+		System.out.println(i);
+	}
+}
+class c extends B{
+	public c() {
+		super();
+	}
+	public void eat(String x) {
+		super.i="dsds";
+	}
+}
+public class A {
+	public static void main(String[] args) {
+		B b=new c();
+		
+	}
+}

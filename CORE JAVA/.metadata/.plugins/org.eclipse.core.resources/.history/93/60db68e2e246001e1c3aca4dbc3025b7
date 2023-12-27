@@ -1,0 +1,15 @@
+package Using_Thread_Class;
+
+public class Thread1 extends Thread {
+	public void run() {
+		for() {
+			
+		}
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

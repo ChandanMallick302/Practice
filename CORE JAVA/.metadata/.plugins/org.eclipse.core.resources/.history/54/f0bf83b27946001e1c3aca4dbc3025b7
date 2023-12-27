@@ -1,0 +1,19 @@
+package Assignment;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Implimenting_Method {
+
+	public static void main(String[] args) {
+		Map<String, Integer> Courses = new HashMap();
+		Courses.put("Java", 12000);
+		Courses.put("python", 130000);
+		Courses.put("FSJD", 120000);
+		
+		//to use the set collection
+		Courses.entrySet().add("javaajk",1233);
+
+	}
+
+}

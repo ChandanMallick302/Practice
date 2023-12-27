@@ -1,0 +1,26 @@
+package Fetching_the_Collection;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Iteratable_Traverse {
+
+	public static void main(String[] args) {
+		ArrayList<String> al=new ArrayList<>();
+		
+		Scanner sc=new Scanner(System.in);
+		Iterator<String> iterator = al.iterator();
+		while(iterator.hasNext()) {
+			sc.nextLine();
+		}
+		
+		//output
+		System.out.println(al);// in array
+		
+		//traverse the list by iterable
+		
+		
+	}
+
+}

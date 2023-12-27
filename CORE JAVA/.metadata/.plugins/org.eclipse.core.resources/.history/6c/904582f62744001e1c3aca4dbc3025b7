@@ -1,0 +1,13 @@
+package Autoboxing;
+
+public class Primitive_To_Object {
+
+	public static void main(String[] args) {
+		int i = 100;
+		Integer iobj1=i;
+		System.out.println(iobj1);
+		//or
+		Integer iobj2 = Integer.valueOf(i);// jvm will do automatically
+		System.out.println(iobj2);
+	}
+}

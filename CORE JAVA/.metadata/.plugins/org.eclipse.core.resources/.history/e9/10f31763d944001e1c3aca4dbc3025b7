@@ -1,0 +1,23 @@
+package Unchecked_Exception_Handling;
+
+public class NumberFormat_Exception {
+
+	public static void main(String[] args) {
+		System.out.println("Programiing is Started...");
+		try {
+			String[] a= {"",""};
+			int n1 = Integer.parseInt(a[0]);
+			int n2 = Integer.parseInt(a[1]);
+			
+		System.out.println("We have got two numbers");
+		int result=n1/n2;
+		System.out.println("Division is "+result);
+		}
+		catch (NumberFormatException e) {
+			System.out.println("Please don't leave any field");
+			e.printStackTrace();
+		}
+		System.out.println("Program is Terminated");
+	}
+
+}

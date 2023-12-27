@@ -1,0 +1,9 @@
+package Anonymous_inner_class;
+
+public class Person {
+
+	public static void main(String[] args) {
+
+	}
+
+}

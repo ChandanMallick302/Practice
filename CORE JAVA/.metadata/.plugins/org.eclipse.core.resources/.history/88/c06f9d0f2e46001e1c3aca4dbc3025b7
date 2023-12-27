@@ -1,0 +1,27 @@
+package Generics;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
+public class Generic_Collection {
+
+	public static void main(String[] args) {
+		
+		//Creating type-safe generic collection
+		List<Double> list=new ArrayList<>();
+		
+		list.add(454.878);
+		list.add((5646.99));
+		
+		System.out.println(hs);
+		
+		//TypeCasting
+		
+		
+		System.out.println(str);
+		
+
+	}
+
+}

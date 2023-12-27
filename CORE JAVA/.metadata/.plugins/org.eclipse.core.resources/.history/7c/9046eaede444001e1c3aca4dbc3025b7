@@ -1,0 +1,9 @@
+package Checked_Exception_Handling;
+
+public class Exception_Handling {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

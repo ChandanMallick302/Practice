@@ -1,0 +1,24 @@
+package com.practice.constructor;
+
+class a{
+	//Non-Constructor
+	public a() {
+		
+	}
+	// Parameterized Constructor
+	public a(int i,String c){
+		
+	}
+	a(){
+		
+	}
+}
+public class Constructors {
+
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

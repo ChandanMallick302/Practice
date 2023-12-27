@@ -1,0 +1,8 @@
+package Member_Inner_class;
+
+class Outer {
+
+	class inner{
+		
+	}
+}

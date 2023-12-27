@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;For_Loop.For_Loop&apos; to &apos;Simple_For_Loop&apos;&#x0D;&#x0A;- Original project: &apos;Loops&apos;&#x0D;&#x0A;- Original element: &apos;For_Loop.For_Loop&apos;&#x0D;&#x0A;- Renamed element: &apos;For_Loop.Simple_For_Loop&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;For_Loop&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;For_Loop{For_Loop.java[For_Loop" matchStrategy="1" name="Simple_For_Loop" qualified="false" references="true" similarDeclarations="false" stamp="1690981452520" textual="false" version="1.0"/>
+</session>

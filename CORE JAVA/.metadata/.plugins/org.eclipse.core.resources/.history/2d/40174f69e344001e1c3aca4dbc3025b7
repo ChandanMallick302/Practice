@@ -1,0 +1,22 @@
+package Custom_Exception;
+
+public class Test {
+
+	public static int age = 18;
+
+	public static void main(String[] args) {
+//		AgeInvalidException ae = new AgeInvalidException("Voter is not eligible to vote");
+//		if (age > 18) {
+//			System.out.println("Voter is eligible to vote");
+//		} else {
+//			System.out.println(ae.getMessage());
+//		}
+		
+		if(age>18) {
+			System.out.println("Voter is eligible to vote");
+		}
+		else {
+			throw new AgeInvalidException("Voter is not eligible to vote");
+		}
+	}
+}

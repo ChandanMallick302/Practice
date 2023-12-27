@@ -1,0 +1,21 @@
+package Type_Safe;
+
+public class TypeSafe<T> {
+	T container;
+
+	public TypeSafe(T container) {
+		this.container = container;
+	}
+
+	public Object getValue() {
+		return container;
+	}
+
+	public static void main(String[] args) {
+
+		TypeSafe<String> t1=new TypeSafe<String>("dsds")
+		// Here no type is mention so you can use any type of data
+
+	}
+
+}

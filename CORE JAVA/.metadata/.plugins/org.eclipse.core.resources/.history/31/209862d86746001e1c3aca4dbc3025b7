@@ -1,0 +1,111 @@
+package Sorting_the_List;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+class Employee2 {
+	private int empid;
+	private String ename;
+	private int phone;
+	private String address;
+
+	public int getEmpid() {
+		return empid;
+	}
+
+	public void setEmpid(int empid) {
+		this.empid = empid;
+	}
+
+	public String getEname() {
+		return ename;
+	}
+
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+
+	public int getPhone() {
+		return phone;
+	}
+
+	public void setPhone(int phone) {
+		this.phone = phone;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public Employee2(int empid, String ename, int phone, String address) {
+		super();
+		this.empid = empid;
+		this.ename = ename;
+		this.phone = phone;
+		this.address = address;
+	}
+
+	public Employee2() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return "Employee2 [empid=" + empid + ", ename=" + ename + ", phone=" + phone + ", address=" + address + "]";
+	}
+
+}
+
+//sorting data by id
+class idComparator implements Comparator<Employee2> {
+
+	@Override
+	public int compare(Employee2 o1, Employee2 o2) {
+		// TODO Auto-generated method stub
+		return o1.getEmpid()-o2.getEmpid();
+	}
+	
+}
+class phoneComparator implements Comparator<Employee2>{
+
+	@Override
+	public int compare(Employee2 o1, Employee2 o2) {
+		// TODO Auto-generated method stub
+		return o1.getPhone()-o2.getPhone();
+	}
+	
+}
+class nameComparator{
+	
+}
+public class Make_Custom_Sort_Logic_By_Comparator {
+
+	public static void main(String[] args) {
+		List<Employee2> emp1 = new ArrayList<>();
+		emp1.add(new Employee2(1, "Chandan", 99381212, "Balasore"));
+		emp1.add(new Employee2(3, "Ramesh", 99355454, "Nilgiri"));
+		emp1.add(new Employee2(2, "Rajesh", 993846465, "Saer"));
+
+		System.out.println(emp1);
+
+		// sorting id by comparator
+		Collections.sort(emp1,new idComparator());
+		
+		System.out.println(emp1);
+		
+		//sorting data by phone
+		Collections.sort(emp1,new phoneComparator());
+		
+		System.out.println(emp1);
+		
+		//sorting by name
+		Collections.sort(emp1, new nameComparator());
+	}
+}

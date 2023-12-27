@@ -1,0 +1,8 @@
+package package_a;
+
+public class B__Same_PackageSubClass extends A{
+	public static void main(String[] args) {
+		A a=new A();
+		System.out.println(a.b);//default
+	}
+}

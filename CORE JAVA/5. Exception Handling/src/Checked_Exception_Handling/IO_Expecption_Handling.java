@@ -1,0 +1,19 @@
+package Checked_Exception_Handling;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+public class IO_Expecption_Handling {
+
+	public static void main(String[] args)throws IOException {
+		
+		try {
+			FileReader fr= new FileReader("");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e);
+		}
+
+	}
+
+}

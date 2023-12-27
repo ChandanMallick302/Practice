@@ -1,0 +1,16 @@
+package Anonymous_inner_class;
+interface Eatable{
+	void eat();
+}
+class AnonymousInner_ByInterface {
+public static void main(String[] args) {
+	Eatable e=new Eatable() {
+		
+		@Override
+		public void eat() {
+			// TODO Auto-generated method stub
+			
+		}
+	};
+}
+}

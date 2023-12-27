@@ -1,0 +1,5 @@
+package package_a;
+
+public class B_Child_of_A extends A{
+	
+}

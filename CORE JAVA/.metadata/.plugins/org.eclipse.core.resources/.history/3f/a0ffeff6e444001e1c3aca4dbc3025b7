@@ -1,0 +1,12 @@
+package Checked_Exception_Handling;
+
+import java.io.FileInputStream;
+
+public class Exception_Handling {
+
+	public static void main(String[] args) {
+		FileInputStream f=new FileInputStream("");
+		
+	}
+
+}

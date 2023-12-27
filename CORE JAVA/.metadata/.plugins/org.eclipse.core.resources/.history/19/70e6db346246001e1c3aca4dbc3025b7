@@ -1,0 +1,16 @@
+package Assignment;
+class Employee1{
+	private int empid;
+	private String ename;
+	private int phone;
+	private String address;
+}
+
+public class Make_Custom_Sort_Logic {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

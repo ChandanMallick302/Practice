@@ -1,0 +1,17 @@
+package stream_api;
+
+import java.util.stream.Stream;
+
+public class Calling_Steam_Object {
+
+	public static void main(String[] args) {
+		//Stream Api - Collection of object
+		//collection / group of object
+		
+		//1. Blank Stream
+		
+		Stream<Object> emptyStream = Stream.empty();
+		String name[]={"Chandan","Rajesh","suresh"};
+	}
+
+}

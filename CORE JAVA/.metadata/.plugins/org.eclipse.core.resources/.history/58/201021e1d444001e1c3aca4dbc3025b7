@@ -1,0 +1,9 @@
+package Exception_Handling;
+
+public class UnChecked_Exception {
+
+	public static void main(String[] args) {
+		args[0];
+	}
+
+}

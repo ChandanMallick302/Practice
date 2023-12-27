@@ -1,0 +1,27 @@
+package Generics;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
+public class Generic_Collection {
+
+	public static void main(String[] args) {
+		
+		//Creating type-safe generic collection
+		List<Integer> list=new ArrayList<Integer>();
+		
+		list.add(4545);
+		list.add(545455);
+		
+		System.out.println(list);
+		
+		//TypeCasting
+		int str = (int) list.get(1);
+		
+		System.out.println(str);
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package file_Operation;
+
+import java.io.File;
+
+public class Copy_content_from_one_file_to_another_file {
+
+	public static void main(String[] args) {
+		try {
+			File file1=new File("src/file_storage/Java.txt");
+			try {
+				
+			}finally {
+				
+			}
+			
+			
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+
+}

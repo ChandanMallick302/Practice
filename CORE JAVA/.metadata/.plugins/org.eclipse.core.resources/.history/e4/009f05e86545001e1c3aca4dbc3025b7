@@ -1,0 +1,7 @@
+package Anonymous_inner_class;
+
+class AnonymousInner_ByInterface {
+public static void main(String[] args) {
+	
+}
+}

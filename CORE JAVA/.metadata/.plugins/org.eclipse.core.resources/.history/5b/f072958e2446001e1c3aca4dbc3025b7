@@ -1,0 +1,17 @@
+package TypeSafe_And_UnTypeSafe;
+
+import java.util.ArrayList;
+
+public class UnTypeSafe_Collection {
+
+	public static void main(String[] args) {
+		ArrayList name = new ArrayList();
+		name.add("dsds");
+		// Because of String un type safe you can use other the data type also
+		name.add(564); 
+		name.add(45.1510);
+		name.add(true);
+
+		System.out.println(name);
+	}
+}

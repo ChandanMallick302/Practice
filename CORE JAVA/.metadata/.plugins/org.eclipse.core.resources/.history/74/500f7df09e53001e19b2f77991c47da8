@@ -1,0 +1,14 @@
+package Static_Block;
+
+public class Static_Block {
+
+	static {
+		System.out.println("Static Block executed");
+	}
+	{
+		System.out.println("Non-static method is executed");
+	}
+	public static void main(String[] args) {
+		System.out.println("Main method executed");
+	}
+}

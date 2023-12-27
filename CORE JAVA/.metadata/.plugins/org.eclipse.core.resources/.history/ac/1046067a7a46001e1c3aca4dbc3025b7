@@ -1,0 +1,22 @@
+package Assignment;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Implimenting_Method {
+
+	public static void main(String[] args) {
+		Map<String, Integer> Courses = new HashMap();
+		Courses.put("Java", 12000);
+		Courses.put("python", 130000);
+		Courses.put("FSJD", 120000);
+		
+		// Add the data By using the set collection
+		Courses.entrySet().add(Map.entry("dsdsd", 54545));
+
+		System.out.println(Courses);
+		
+	}
+
+}

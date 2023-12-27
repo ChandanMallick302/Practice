@@ -1,0 +1,25 @@
+1693246279886	Copy compilation unit
+1693276156155	Rename type 'Vector'
+1693276167554	Rename type 'LinkedList_Collection'
+1693277096823	Copy compilation unit
+1693277114505	Rename type 'LinkedSet_Set'
+1693282989106	Rename type 'UnTypeSafe_Collection'
+1693282999764	Rename type 'TypeSafe_Collection'
+1693283010173	Rename type 'Un_TypeSafe_Collection'
+1693283274092	Infer generic type arguments
+1693283282127	Infer generic type arguments
+1693288775127	Delete element
+1693289226170	Rename type 'Adding_All_By_Collection'
+1693289479317	Copy compilation unit
+1693289491223	Copy compilation unit
+1693289501205	Copy compilation unit
+1693290534274	Rename type 'Iterator_Traverse'
+1693291886372	Rename type 'ForEach_Object_Traverse'
+1693304113702	Rename type 'Enumeration_Traverse'
+1693304585175	Rename type 'Enumeration_Cursor_Traverse'
+1693305705239	Copy compilation unit
+1693305711144	Delete element
+1693305762204	Rename type 'Iteratable_Traverse'
+1693311110672	Move compilation unit
+1693311140814	Rename type 'Make_Custom_Sort_Logic'
+1693311219892	Copy compilation unit

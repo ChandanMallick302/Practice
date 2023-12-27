@@ -1,0 +1,6 @@
+
+public interface Myinterface {
+	public abstract void sayHello();
+	public abstract void how();	
+
+}

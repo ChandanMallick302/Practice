@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;95. Access Specifier&apos; to &apos;95. Access Modifier&apos;" description="Rename resource &apos;95. Access Specifier&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/95. Access Specifier" name="95. Access Modifier" stamp="1693135209558" updateReferences="true"/>
+</session>

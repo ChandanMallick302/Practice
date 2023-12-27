@@ -1,0 +1,17 @@
+package stream_api;
+
+import java.util.List;
+
+public class StreamMain1 {
+
+	public static void main(String[] args) {
+		
+		//Q:- Create a List Filter all even number from List
+		
+		List<Integer> list = List.of(2,4,50,21,22,67);
+		list.add(45);
+		System.out.println(list);
+
+	}
+
+}

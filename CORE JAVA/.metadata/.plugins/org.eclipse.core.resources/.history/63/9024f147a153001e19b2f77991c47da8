@@ -1,0 +1,8 @@
+package asfasfczc;
+
+public class Static_Block {
+	static {
+		System.out.println("Fdfd");
+	}
+
+}

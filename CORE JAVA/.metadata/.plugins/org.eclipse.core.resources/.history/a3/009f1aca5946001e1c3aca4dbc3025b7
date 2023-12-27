@@ -1,0 +1,10 @@
+package Assignment;
+
+public class Add_Element_by_object {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

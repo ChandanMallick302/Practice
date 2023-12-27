@@ -1,0 +1,10 @@
+package LocalDate_class;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class SimpleDateFormatExample {
+public static void main(String[] args) {
+	Date date=new Date();
+	SimpleDateFormat formater=new SimpleDateFormat("dd/MM/yyyy");
+}
+}

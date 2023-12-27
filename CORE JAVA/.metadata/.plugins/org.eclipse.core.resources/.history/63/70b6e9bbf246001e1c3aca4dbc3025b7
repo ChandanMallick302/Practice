@@ -1,0 +1,64 @@
+package Project;
+
+class producer extends Thread {
+	Company c;
+
+	public producer(Company c) {
+		this.c = c;
+	}
+
+	public void run() {
+		int i = 1;
+		while (true) {
+			this.c.produced_item(i);
+			try {
+				Thread.sleep(1000);
+			} catch (Exception e) {
+			}
+			i++;
+		}
+	}
+}
+
+class consumer extends Thread {
+	Company c;
+
+	public consumer(Company c) {
+		this.c = c;
+	}
+
+	public void run() {
+		while (true) {
+			this.c.consume_item();
+			try {
+				Thread.sleep(2000);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+	}
+}
+
+public class Company {
+
+	private int n;
+
+	synchronized public void produced_item(int n) {
+		this.n = n;
+		System.out.println("Produced " + this.n);
+	}
+
+	synchronized public int consume_item() {
+		System.out.println("Consumed " + this.n);
+		return this.n;
+	}
+
+	public static void main(String[] args) {
+		Company c = new Company();
+		producer p1 = new producer(c);
+		consumer c1 = new consumer(c);
+
+		p1.start();
+		c1.start();
+	}
+}

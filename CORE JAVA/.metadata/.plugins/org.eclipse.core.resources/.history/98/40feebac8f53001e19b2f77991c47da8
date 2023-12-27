@@ -1,0 +1,12 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("My ststem starts.....");
+		
+		Myinterface m1=new Myinterimpl();
+		m1.sayHello();
+
+	}
+
+}

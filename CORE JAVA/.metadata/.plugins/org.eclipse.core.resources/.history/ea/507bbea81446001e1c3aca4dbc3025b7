@@ -1,0 +1,13 @@
+package List_Collection;
+
+import java.util.Stack;
+import java.util.Vector;
+
+public class Stack_Vector {
+
+	public static void main(String[] args) {
+		Vector<Integer> vec=new Stack<>();
+
+	}
+
+}

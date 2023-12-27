@@ -1,0 +1,9 @@
+
+@FunctionalInterface
+public interface Myinterface {
+	public abstract void sayHello();
+//	public abstract void how();//	FunctionalInterface contain only one method 
+
+}
+
+// Create a separate class and implement this interface

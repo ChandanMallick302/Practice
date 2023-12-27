@@ -1,0 +1,20 @@
+package synchronization_of_thread;
+
+class A extends Thread {
+private int;
+	synchronization_of_thread s;
+	
+}
+
+class B extends Thread {
+
+	synchronization_of_thread s;
+}
+
+public class synchronization_of_thread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}

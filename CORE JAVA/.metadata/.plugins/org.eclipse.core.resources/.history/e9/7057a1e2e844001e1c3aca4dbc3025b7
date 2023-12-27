@@ -1,0 +1,14 @@
+package Checked_Exception_Handling;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class FileNotFound_Exception_Handling {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		FileInputStream f = new FileInputStream("C:\\Users\\Hackers World\\Downloads\\Documents");
+		System.out.println("Program terminated");
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package Checked_Exception_Handling;
+
+import java.io.FileReader;
+
+public class IO_Expecption_Handling {
+
+	public static void main(String[] args) {
+		
+		FileReader fr= new FileReader("");
+
+	}
+
+}

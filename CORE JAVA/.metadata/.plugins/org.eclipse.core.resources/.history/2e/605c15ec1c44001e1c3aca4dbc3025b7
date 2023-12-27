@@ -1,0 +1,14 @@
+package polymerphysim;
+class animal{
+	public void color() {
+		System.out.println("Color is");
+	}
+}
+// Here jvm will choose which one going to be run
+public class RunTimePolymerphysim_OverRidding {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

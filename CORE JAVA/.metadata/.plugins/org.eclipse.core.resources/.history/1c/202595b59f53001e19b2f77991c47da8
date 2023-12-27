@@ -1,0 +1,26 @@
+package Static_Block;
+
+public class Static_Block {
+
+	static {
+		System.out.println("Static Block executed");
+	}
+	{
+		System.out.println("Non-static block is executed");
+	}
+	void method1() {
+		System.out.println("Non-static Method is excuted");
+	}
+	static void method2() {
+		System.out.println("Static Method is excuted");
+	}
+	public static void main(String[] args) {
+		System.out.println("Main method executed");
+		method2();
+		Static_Block s1=new Static_Block();
+		s1.method1();
+
+
+		
+	}
+}

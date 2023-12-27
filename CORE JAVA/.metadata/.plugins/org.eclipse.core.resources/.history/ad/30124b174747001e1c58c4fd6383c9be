@@ -1,0 +1,27 @@
+package Serialization;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class Serlial {
+
+	public static void main(String[] args) throws IOException {
+		Student s1=new Student("Chandan Mallick", "cmallick88@gmail.com", 29, "Balasore");
+		
+		try {
+			//write data to a file
+			FileOutputStream file1 = new FileOutputStream("src/file_storage/ob.txt");
+			
+			//converting object to ByteStream
+			ObjectOutputStream o=new ObjectOutputStream(file1);
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		
+
+	}
+
+}

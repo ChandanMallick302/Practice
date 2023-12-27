@@ -1,0 +1,12 @@
+package polymerphysim;
+
+// Here compiler will choose which one going to be run
+public class RunTimePolymerphysim_OverRidding {
+
+	public static void main(String[] args) {
+		
+		person p1=new person();
+		p1.doing(2,"Chat");
+	}
+
+}

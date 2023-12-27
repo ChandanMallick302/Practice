@@ -1,0 +1,38 @@
+package Assignment;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+public class Impliment_All_Methods {
+
+	public static void main(String[] args) {
+		
+		// Creating Generic Type List
+		List<String> list=new ArrayList<String>();
+		
+		//Adding name in to list
+		list.add("Chandan");
+		list.add("Rajesh");
+		list.add("Suresh");
+		list.add("Ramesh");
+		list.add("Umesh");
+		list.add("Puja");
+		
+		//Remove the name from the list
+		list.remove(1);// remove by index no
+		list.remove("Chandan"); //remove by name
+		
+		//Adding new element in list
+		
+		
+		//showing output
+		System.out.println(list);
+		System.out.println("List size is: "+list.size());// to check the list size
+		System.out.println("Is chandan is available in list ? "+list.contains("Umesh")); // check availability of data in the list
+		System.out.println("Is list is empty ? "+list.isEmpty());// to check either list is empty or not
+		System.out.println("Adding Ram in index-1 of the list "+);
+		
+	}
+
+}

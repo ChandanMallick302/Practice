@@ -1,0 +1,18 @@
+package Assignment;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
+public class Adding_All_By_Collection {
+
+	public static void main(String[] args) {
+		Collection<String> c=new ArrayList<>();
+		
+		c=Collections.checkedCollection(c, String.class);
+		Collections.addAll(c, "Apple","Banana","Grapes","Orange");
+		System.out.println(c);
+		
+		Collections c2=c;
+	}
+}

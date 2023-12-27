@@ -1,0 +1,10 @@
+package Checked_Exception_Handling;
+
+public class ClassNotFound_Exception_Handling {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package Multiple_Exception_Handling;
+
+public class Multiple_Exception_Handling {
+
+	
+	public static void main(String[] args) {
+	String s[]= {"a","5454"};
+	int n1 = Integer.parseInt(s[0]);
+	int n2 = Integer.parseInt(s[2]);
+	int result=n1/n2;
+	try {
+		System.out.println(result);
+	}
+	catch (NumberFormatException n) {
+		System.out.println("Please Fill all the fields");
+	}
+	catch (ArrayIndexOutOfBoundsException e) {
+		System.out.println("Please enter inde the array length");
+	}
+	}
+
+}

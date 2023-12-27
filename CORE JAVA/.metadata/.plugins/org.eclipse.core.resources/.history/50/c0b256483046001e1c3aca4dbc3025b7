@@ -1,0 +1,21 @@
+package TypeSafe_And_UnTypeSafe;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TypeSafe_Collection {
+
+	public static void main(String[] args) {
+		ArrayList<String> name = new ArrayList<>();
+		name.add("dsds");
+		name.add("dsdsff");
+//		name.add(564); //Because of String type safe error showing
+
+		// output
+		System.out.println(name);
+
+		// TypeCasting
+		String str = (String) name.get(1);
+		System.out.println(str);
+	}
+}

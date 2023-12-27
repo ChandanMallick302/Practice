@@ -1,0 +1,14 @@
+package HashMap;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMap_Map {
+
+	public static void main(String[] args) {
+		Map<Integer, String> hm=new HashMap<>();
+		hm.put(1, "Apple");
+		hm.put(3, "Orange");
+	}
+
+}

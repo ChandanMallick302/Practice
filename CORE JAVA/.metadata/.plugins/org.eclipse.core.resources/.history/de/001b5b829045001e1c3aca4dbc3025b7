@@ -1,0 +1,10 @@
+package Assignment_Of_Array;
+
+public class i_Addition_of_all_index {
+public static void main(String[] args) {
+	int[]x= {1,4,5,8,6};
+	
+	
+	
+}
+}

@@ -1,0 +1,30 @@
+package Assignment;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+class Employee{
+	private String name;
+	private int id;
+	public Employee(String name,int id) {
+		super();
+		this.name=name;
+		this.id=id;
+		// TODO Auto-generated constructor stub
+	}
+}
+public class Implimenting_Method {
+
+	public static void main(String[] args) {
+		Map<String, Integer> Courses = new HashMap();
+		Courses.put("Java", 12000);
+		Courses.put("python", 130000);
+		Courses.put("FSJD", 120000);
+		
+		//to use the set collection
+		Courses.entrySet().add();
+
+	}
+
+}

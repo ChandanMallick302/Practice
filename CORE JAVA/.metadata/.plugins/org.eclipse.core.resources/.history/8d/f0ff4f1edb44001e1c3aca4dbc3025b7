@@ -1,0 +1,19 @@
+package Unchecked_Exception_Handling;
+
+public class NullPointer_Exception {
+
+	public static void main(String[] args) {
+		System.out.println("Programiing is Started...");
+		String a=null;
+		try {
+			System.out.println(a);
+		System.out.println("Division is "+result);
+		}
+		catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Please don't leave any field");
+			e.printStackTrace();
+		}
+		System.out.println("Program is Terminated");
+	}
+
+}

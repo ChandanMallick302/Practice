@@ -1,0 +1,15 @@
+package Fetching;
+
+public class forLoop_Traversing {
+
+	public static void main(String[] args) {
+		hm.put(1, "Apple");
+		hm.put(4, "Orange");
+		hm.put(2, "Mango");
+		hm.put(1, "Grapes");
+		
+		System.out.println(hm);
+
+	}
+
+}

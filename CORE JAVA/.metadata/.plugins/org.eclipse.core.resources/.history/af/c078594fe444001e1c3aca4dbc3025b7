@@ -1,0 +1,11 @@
+package Checked_Exception_Handling;
+
+import java.io.File;
+
+public class Exception_Handling {
+
+	public static void main(String[] args) {
+		File f= new File("");
+	}
+
+}

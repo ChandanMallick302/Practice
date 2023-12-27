@@ -1,0 +1,15 @@
+package file_Operation;
+
+public class Copy_content_from_one_file_to_another_file {
+
+	public static void main(String[] args) {
+		try {
+			
+			
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+
+}

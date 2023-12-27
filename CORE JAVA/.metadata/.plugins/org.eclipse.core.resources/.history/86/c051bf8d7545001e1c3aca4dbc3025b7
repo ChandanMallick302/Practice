@@ -1,0 +1,10 @@
+package Types_of_Aarray;
+
+public class Three_dimensional_array {
+
+	public static void main(String[] args) {
+		String x[][][]=new String[5][][];
+
+	}
+
+}

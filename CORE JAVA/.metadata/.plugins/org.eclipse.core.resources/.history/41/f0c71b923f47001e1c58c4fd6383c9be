@@ -1,0 +1,23 @@
+package file_Operation;
+
+import java.io.File;
+
+public class RenameFile {
+
+	public static void main(String[] args) {
+		
+		//Existing file Location
+		File file1=new File("src/file_storage/LC.txt");
+		
+		//Renaming File Location
+		File fil2=new File("src/file_storage/Java.txt");
+		
+		if(file1.exists()) {
+			file1.renameTo(fil2);
+		}
+		else {
+			System.out.println();
+		}
+	}
+
+}

@@ -1,0 +1,16 @@
+package Custom_Exception;
+
+public class Test {
+
+	public static int age=18;
+	public static void main(String[] args) {
+		try {
+		if(age>18) {
+			
+		}
+		}catch(){
+			
+		}
+		
+	}
+}

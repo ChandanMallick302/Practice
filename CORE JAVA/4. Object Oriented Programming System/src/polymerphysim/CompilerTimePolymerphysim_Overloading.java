@@ -1,0 +1,20 @@
+package polymerphysim;
+class person{
+	//Method Overloading
+	public void doing(String i) {
+		System.out.println("Persion is "+ i);
+	}
+	public void doing(int i, String j) {
+		System.out.println("Persion is eating "+ i+ " "+j );
+	}
+}
+// Here compiler will choose which one going to be run
+public class CompilerTimePolymerphysim_Overloading {
+
+	public static void main(String[] args) {
+		
+		person p1=new person();
+		p1.doing(2,"Chat");
+	}
+
+}

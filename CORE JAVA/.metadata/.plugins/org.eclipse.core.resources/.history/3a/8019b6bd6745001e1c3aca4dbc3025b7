@@ -1,0 +1,7 @@
+package static_nested_class;
+
+static class static_nested_class {
+public static void main(String[] args) {
+	
+}
+}

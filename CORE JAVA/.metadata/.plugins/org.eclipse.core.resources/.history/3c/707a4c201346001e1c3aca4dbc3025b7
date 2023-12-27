@@ -1,0 +1,12 @@
+package List_Collection;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class LinkedList_Collection {
+
+	public static void main(String[] args) {
+		LinkedList<int> list=new LinkedList();
+		Li
+	}
+}

@@ -1,0 +1,19 @@
+package superKeyWord;
+
+class B{
+	String i;
+	public B(String i) {
+		this.i=i;
+		System.out.println("class B & "+i);
+	}
+}
+class c extends B{
+	public c() {
+		super("dzdz");
+	}
+}
+public class A {
+	public static void main(String[] args) {
+		c b=new c();
+	}
+}

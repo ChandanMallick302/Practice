@@ -1,0 +1,17 @@
+package Deserialization;
+
+import java.io.FileInputStream;
+
+public class Deserialization_Process {
+
+	public static void main(String[] args) {
+		try {
+			FileInputStream file=new FileInputStream("src/file_storage/student.txt");
+			
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+
+}

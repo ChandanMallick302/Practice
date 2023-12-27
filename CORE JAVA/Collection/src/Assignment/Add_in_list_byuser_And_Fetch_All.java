@@ -1,0 +1,29 @@
+package Assignment;
+
+import java.util.ArrayList;
+import java.util.ConcurrentModificationException;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Add_in_list_byuser_And_Fetch_All {
+
+	public static void main(String[] args) throws ConcurrentModificationException {
+		ArrayList<String> al=new ArrayList<>();
+		
+		Scanner sc=new Scanner(System.in);
+		Iterator<String> iterator = al.iterator();
+		while(al.size()<3) {
+			String nextLine = sc.nextLine();
+			 al.add(nextLine);
+		}
+		
+		//output
+		System.out.println(al);// in array
+		
+		//traverse the list by iterable
+		
+		al.forEach(e->{System.out.println(e);});
+		
+	}
+
+}

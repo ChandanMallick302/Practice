@@ -1,0 +1,7 @@
+package LocalDate_class;
+
+public class SimpleDateFormatExample {
+public static void main(String[] args) {
+	Date date=new Date();
+}
+}

@@ -1,0 +1,12 @@
+package Anonymous_inner_class;
+abstract class person{
+	
+}
+
+class AnonymousInner_ByAbstractClass {
+
+	public static void main(String[] args) {
+
+	}
+
+}

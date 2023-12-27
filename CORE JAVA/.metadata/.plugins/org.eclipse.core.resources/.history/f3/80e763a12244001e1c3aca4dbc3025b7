@@ -1,0 +1,16 @@
+package superKeyWord;
+
+class B{
+	int i;
+	public B() {
+		System.out.println(i);
+	}
+}
+class c extends B{
+	
+}
+public class A {
+	public static void main(String[] args) {
+		
+	}
+}

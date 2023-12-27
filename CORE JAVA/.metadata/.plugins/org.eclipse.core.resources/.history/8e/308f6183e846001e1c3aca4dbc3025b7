@@ -1,0 +1,13 @@
+package Assignment;
+
+public class Implementing_All_Methods_of_Thread {
+	
+	public static void main(String[] args) {
+		System.out.println("Program Started");
+		int x=56+34;
+		System.out.println("Sum is "+x);
+		//Check the currecnt thred name
+		
+		System.out.println("Program Ended");
+	}
+}

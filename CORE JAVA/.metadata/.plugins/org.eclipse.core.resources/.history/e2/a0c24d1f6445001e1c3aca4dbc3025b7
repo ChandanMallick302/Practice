@@ -1,0 +1,15 @@
+package Member_Inner_class;
+
+class Outer {
+
+	private int data;;
+	class inner{
+		void msg() {
+			System.out.println("data is "+data);
+		}
+	}
+	public static void main(String[] args) {
+		Outer.inner obj1=new Outer.inner();
+		obj1.data
+	}
+}

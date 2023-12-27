@@ -1,0 +1,15 @@
+package Anonymous_inner_class;
+interface Eatable{
+	void eat();
+}
+class AnonymousInner_ByInterface implements Eatable {
+public static void main(String[] args) {
+	
+}
+
+@Override
+public void eat() {
+	// TODO Auto-generated method stub
+	
+}
+}

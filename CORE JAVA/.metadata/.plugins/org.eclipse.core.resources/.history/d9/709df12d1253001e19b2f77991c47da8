@@ -1,0 +1,10 @@
+package stream_api;
+
+public class Calling_Steam_Object {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package Checked_Exception_Handling;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class SQL_Exception_Handling {
+
+	public static void main(String[] args) throws SQLException {
+		// TODO Auto-generated method stub
+
+		Connection con = getConnection("javaDb", "postgres", "abrar");
+	}
+
+	public static Connection getConnection(String dbname, String user, String pass) throws SQLException {
+		Connection con_obj = null;
+
+		String url = "jdbc:postgresql://localhost:5432/";
+
+		con_obj = DriverManager.getConnection(url + dbname, user, pass);
+
+		if (con_obj != null) {
+			System.out.println("Connection established successfully !");
+		} else {
+			System.out.println("Connection failed !!");
+		}
+
+		return con_obj;
+	}
+}

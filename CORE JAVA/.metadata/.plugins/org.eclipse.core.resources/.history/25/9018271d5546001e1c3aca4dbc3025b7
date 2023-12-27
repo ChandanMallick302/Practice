@@ -1,0 +1,13 @@
+package Fetching_the_Collection;
+
+import java.util.Stack;
+import java.util.Vector;
+
+public class Enumeration_Cursor_Traverse {
+
+	public static void main(String[] args) {
+		Vector<String> v=new Stack<String>();
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package Nested_Interface;
+interface showable{
+	void show();
+	interface message{
+		void msg();
+	}
+}
+public class NestedInterface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

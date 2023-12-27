@@ -1,0 +1,27 @@
+package Deserialization;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+import Serialization.Student;
+
+public class Deserialization_Process {
+
+	public static void main(String[] args) {
+		try {
+			// Give the path for creating and Read from file
+			FileInputStream file = new FileInputStream("src/file_storage/student.txt");
+
+			// Create a connection ObjectOutputStream & FileOutputStream
+			// ObjectOutputStream will make object into the data
+			ObjectInputStream o = new ObjectInputStream(file);
+			
+			Student s=(Student)o.readObject();
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+
+}

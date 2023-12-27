@@ -1,0 +1,6 @@
+package Custom_Exception;
+
+public class AgeInvalidException {
+
+	
+}

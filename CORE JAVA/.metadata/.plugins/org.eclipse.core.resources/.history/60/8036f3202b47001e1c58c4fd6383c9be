@@ -1,0 +1,25 @@
+package file_Operation;
+
+import java.io.File;
+import java.io.IOException;
+
+public class CreateFile {
+
+	public static void main(String[] args) throws IOException {
+
+		File file = new File("src/file_storage/LC.txt");
+		if (file.createNewFile()) {
+			try {
+				System.out.println("File Successfully Created...!");
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		} else {
+			try {
+				System.out.println("File is already exists...");
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+package Un_Type_Safe;
+
+public class UnTypeSafe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

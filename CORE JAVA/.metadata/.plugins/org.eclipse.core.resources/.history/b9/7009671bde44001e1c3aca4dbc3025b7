@@ -1,0 +1,14 @@
+package Multiple_Exception_Handling;
+
+public class Multiple_Exception_Handling {
+
+	
+	public static void main(String[] args) {
+	String s[]= {"a","5454"};
+	int n1 = Integer.parseInt(s[0]);
+	int n2 = Integer.parseInt(s[1]);
+	
+
+	}
+
+}

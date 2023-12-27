@@ -1,0 +1,21 @@
+package Serialization;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class Serlial {
+
+	public static void main(String[] args) throws Exception {
+		//Provide data by creating Student object
+		Student s1=new Student("Chandan", "cmallick88@gmail.com", 29, "Balasore");
+		
+		//Give the path for creating and writing a new file
+		FileOutputStream file=new FileOutputStream("src/file_storage/student.txt");
+		
+		//Create a connection ObjectOutputStream & FileOutputStream
+		ObjectOutputStream o=new ObjectOutputStream(file);
+		
+		//
+	}
+
+}

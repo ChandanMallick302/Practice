@@ -1,0 +1,49 @@
+package file_Operation;
+
+import java.io.*;
+
+public class Write_Inside_File {
+
+	public static void main(String[] args) throws IOException {
+//		try {
+//			FileWriter writer = new FileWriter("src/file_storage/LC.txt");
+//			try {
+//				writer.write("JavaPrograming is the best language");
+//			} finally {
+//				writer.close();
+//			}
+//			System.out.println("Data is inserted in file sucessfully");
+//		} catch (Exception e) {
+//			System.out.println(e);
+//		}
+
+		// or
+
+//		try {
+//			BufferedWriter writer1 = new BufferedWriter(new FileWriter("src/file_storage/LC.txt"));
+//			try {
+//				writer1.write("Hello World..!!");
+//			}finally {
+//				writer1.close();
+//			}
+//			System.out.println("Successfully written in file BufferedWriter");
+//		} catch (Exception e) {
+//			System.out.println(e);
+//		}
+
+		// or
+
+		try {
+			BufferedOutputStream writer2 = new BufferedOutputStream(new FileOutputStream("src/file_storage/LC.txt"));
+			try {
+				writer2.
+			} finally {
+				writer2.close();
+			}
+			System.out.println("Successfully data is written in File by BufferedOutputStream");
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}

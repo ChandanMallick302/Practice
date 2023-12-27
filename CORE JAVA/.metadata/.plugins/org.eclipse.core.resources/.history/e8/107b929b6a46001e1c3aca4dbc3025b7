@@ -1,0 +1,26 @@
+package HashMap;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+public class LinkedHashMap_HasMap {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> lhm = new LinkedHashMap<>();
+
+		// Adding Key and objects
+		lhm.put(1, "Apple");
+		lhm.put(4, "Orange");
+		lhm.put(2, "Mango");
+		lhm.put(1, "Grapes");
+
+		System.out.println(lhm);
+
+		// LinkedHasMap is the child of HasMap
+		// it is preserved key order
+		// it does not allow duplicate
+		
+		
+	}
+
+}

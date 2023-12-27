@@ -1,0 +1,11 @@
+package Multiple_Exception_Handling;
+
+public class Multiple_Exception_Handling {
+
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

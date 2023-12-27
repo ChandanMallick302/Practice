@@ -1,0 +1,27 @@
+package Fetching_the_Collection;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+
+public class ListIterator_Traverse {
+
+	public static void main(String[] args) {
+		ArrayList<String> al = new ArrayList<>();
+
+		al.add("Ramesh");
+		al.add("Suresh");
+		al.add("Rajesh");
+		al.add("Paresh");
+		al.add("Umesh");
+		al.add("Bhabesh");
+		
+		//Traversing by ListIterator
+		ListIterator<String> listIterator = al.listIterator();
+		while(listIterator.hasPrevious()) {
+			System.out.println(listIterator.previous());
+		}
+
+	}
+
+}

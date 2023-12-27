@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Variables&apos; to &apos;9. Variables&apos;" description="Rename resource &apos;Variables&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Variables" name="9. Variables" stamp="1690812584437" updateReferences="true"/>
+</session>

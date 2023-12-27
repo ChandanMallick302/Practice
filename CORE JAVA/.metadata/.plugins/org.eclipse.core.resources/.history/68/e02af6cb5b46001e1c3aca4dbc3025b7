@@ -1,0 +1,48 @@
+package Assignment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Employee{
+	private String name;
+	
+	void setName(String name) {
+		this.name=name;
+	}
+
+	String getName() {
+		return name;
+	}
+	public Employee(String name) {
+		
+	}
+}
+public class Add_Element_by_object {
+
+	public static void main(String[] args) {
+		List<Employee> emp=new ArrayList<Employee>();
+		
+		//Create Employee object
+		Employee e1=new Employee();
+		e1.setName("Chandan");
+		
+		Employee e2=new Employee();
+		e2.setName("Rajesh");
+		
+		Employee e3=new Employee();
+		e3.setName("Ramesh");
+		
+		Employee e4=new Employee();
+		e4.setName("Suresh");
+		
+		//Adding to list
+		emp.add(e1);
+		emp.add(e2);
+		emp.add(e3);
+		emp.add(e4);
+		
+		emp.forEach(e->{System.out.println(e.getName());});
+
+	}
+
+}

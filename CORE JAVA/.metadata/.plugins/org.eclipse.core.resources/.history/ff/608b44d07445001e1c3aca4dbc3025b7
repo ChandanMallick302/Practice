@@ -1,0 +1,17 @@
+package Types_of_Aarray;
+
+public class Two_Dimensional_Array {
+
+	public static void main(String[] args) {
+		                        Row Column 
+		String a[][]= new String[2][0];
+		a[0][0]="sas";
+		a[0][1]="daj";
+		System.out.println(a[0][1]);
+		
+		//or
+		String b[][]= {{"sas","dds"},{"daj","ddde"}};
+		System.out.println(b[1][0]);
+	}
+
+}

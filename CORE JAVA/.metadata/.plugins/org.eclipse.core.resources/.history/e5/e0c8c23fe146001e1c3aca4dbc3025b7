@@ -1,0 +1,19 @@
+package Using_Runnable_InterFace;
+
+public class Thread1 implements Runnable {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	@Override
+	public void run() {
+		//Give Task
+		for() {
+			
+		}
+		
+	}
+
+}

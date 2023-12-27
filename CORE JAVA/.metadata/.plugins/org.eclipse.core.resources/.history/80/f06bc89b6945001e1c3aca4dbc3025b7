@@ -1,0 +1,25 @@
+package Nested_Interface;
+interface showable{
+	void show();
+	interface message{
+		void msg();
+	}
+}
+class a implements showable{
+
+	@Override
+	public void show() {
+		System.out.println("I am from showable interface");
+		
+	}
+	class b implements showable.message{
+		
+	}
+	
+}
+public class NestedInterface{
+	public static void main(String[] args) {
+		
+	}
+
+}

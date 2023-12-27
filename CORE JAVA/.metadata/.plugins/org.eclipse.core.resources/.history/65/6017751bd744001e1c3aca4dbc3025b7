@@ -1,0 +1,17 @@
+package Unchecked_Exception_Handling;
+
+public class UnChecked_Exception {
+
+	public static void main(String[] args) {
+		System.out.println("Programiing is Started...");
+		       s1[0]="10";
+		       s2[]="50";
+		int n1 = Integer.parseInt(s1);
+		int n2 = Integer.parseInt(s2);
+		System.out.println("We have got two numbers");
+		int result=n1/n2;
+		System.out.println("Division is "+result);
+		System.out.println("Program is Terminated");
+	}
+
+}

@@ -1,0 +1,13 @@
+package Static_Method;
+
+public class Static_Method {
+
+	static int a=10;
+	void m1() {
+//		static int b=20;// can't use static variable as local variable
+		System.out.println(a);
+	}
+	public static void main(String[] args) {
+		
+	}
+}

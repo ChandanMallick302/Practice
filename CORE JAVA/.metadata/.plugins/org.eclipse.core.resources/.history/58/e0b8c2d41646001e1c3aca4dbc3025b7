@@ -1,0 +1,22 @@
+package Set_Collection;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class TreeSet_SortedSet {
+
+	public static void main(String[] args) {
+		SortedSet<Integer> ss=new TreeSet<>();
+		ss.add(1);
+		ss.add(12);
+		ss.add(15);
+		ss.add(1);
+		ss.add(14);
+		ss.add(13);
+		
+		ss.forEach(a->{System.out.println(a);});
+
+		
+	}
+
+}

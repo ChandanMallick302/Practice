@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;If_Else_stmt&apos; to &apos;If_Else_Statement&apos;&#x0D;&#x0A;- Original project: &apos;93. Condional Statement&apos;&#x0D;&#x0A;- Original element: &apos;93. Condional Statement/src/If_Else_stmt&apos;&#x0D;&#x0A;- Renamed element: &apos;93. Condional Statement/src/If_Else_Statement&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;If_Else_stmt&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;If_Else_stmt" name="If_Else_Statement" qualified="false" references="true" stamp="1690979331023" textual="false" version="1.0"/>
+</session>

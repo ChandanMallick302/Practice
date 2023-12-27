@@ -1,0 +1,10 @@
+package Unchecked_Exception_Handling;
+
+public class StringIndexOutOfBounds_Exception {
+
+	public static void main(String[] args) {
+		System.out.println("Programiing is Started...");
+		System.out.println("Program Terminated");
+	}
+
+}

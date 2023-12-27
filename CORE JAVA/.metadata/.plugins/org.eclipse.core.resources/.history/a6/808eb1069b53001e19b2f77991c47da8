@@ -1,0 +1,8 @@
+package Static_Method;
+
+public class Static_Method {
+
+void display() {
+	
+}
+}

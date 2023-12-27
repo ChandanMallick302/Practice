@@ -1,0 +1,19 @@
+package Unchecked_Exception_Handling;
+
+public class NullPointer_Exception {
+
+	public static void main(String[] args) {
+		System.out.println("Programiing is Started...");
+		String a=null;
+		int s = Integer.parseInt(a);
+		try {
+			System.out.println(s);
+		}
+		catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Please don't Call null in output");
+			e.printStackTrace();
+		}
+		System.out.println("Program is Terminated");
+	}
+
+}

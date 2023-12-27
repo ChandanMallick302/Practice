@@ -1,0 +1,32 @@
+package polymerphysim;
+class person{
+	//Constructor OVERLOADING
+	public person() {	
+		System.out.println("New Persion is creating");
+	}
+	public person(String i) {
+		super();// calling default constructor in parametrized constuctor
+		i="Rice";
+	}
+	public person(int i,String j) {
+		super();// calling default constructor in parametrized constuctor
+		i=2;
+		j="Chat";
+	}
+	//Method Overloading
+	public void doing(String i) {
+		System.out.println("Persion is "+ i);
+	}
+	public void doing(int i, String j) {
+		System.out.println("Persion is "+ i+ " "+j );
+	}
+}
+public class CompileTimePolymerphysim_Overloading {
+
+	public static void main(String[] args) {
+		
+		person p1=new person();
+		p1.doing();
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.practice.constructor;
+
+class a{
+	//Non-Constructor
+	public a() {
+		
+	}
+	// Parameterized Constructor
+	public a(int i,String c){
+		
+	}
+	// overloading constructor
+	public a(String c,int i){
+		
+	}
+	// overloading constructor by narrowing method
+	public a(short i,String c) {
+		
+	}
+	public a(int i) {
+		
+	}
+	public a(String c) {
+		
+	}
+}
+public class Constructors {
+
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

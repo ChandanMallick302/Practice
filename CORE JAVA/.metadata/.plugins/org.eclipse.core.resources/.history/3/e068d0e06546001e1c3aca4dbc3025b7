@@ -1,0 +1,28 @@
+package Sorting_the_List;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+
+public class Make_Custom_Sort_Logic_By_Comparator {
+
+	public static void main(String[] args) {
+		List<Employee1> emp1=new ArrayList<>();
+		emp1.add(new Employee1(1,"Chandan",99381212,"Balasore"));
+		emp1.add(new Employee1(3,"Ramesh",99355454,"Nilgiri"));
+		emp1.add(new Employee1(2,"Rajesh",993846465,"Saer"));
+		
+		System.out.println(emp1);
+		
+		//sorting id by comparator
+		Collections.sort(emp1);
+		System.out.println();// automatic sorting in ascending order
+		
+		// in comparable you can only one can sort ata atime
+		
+		
+	
+	}
+
+}

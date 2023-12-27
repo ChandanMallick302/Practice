@@ -1,0 +1,12 @@
+package List_Collection;
+import java.util.*;
+
+public class ArrayList_List {
+public static void main(String[] args) {
+	System.out.println("Welcome to ");
+	List<int> list=new ArrayList<>();
+	list.add(1);
+	list.add(2);
+	
+}
+}

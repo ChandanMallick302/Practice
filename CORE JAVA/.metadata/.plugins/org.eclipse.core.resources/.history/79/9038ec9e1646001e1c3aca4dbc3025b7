@@ -1,0 +1,13 @@
+package Set_Collection;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class TreeSet_SortedSet {
+
+	public static void main(String[] args) {
+		SortedSet<Integer> ss=new TreeSet()<>();
+
+	}
+
+}

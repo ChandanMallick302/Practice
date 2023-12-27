@@ -1,0 +1,12 @@
+package Types_of_Aarray;
+
+public class Two_Dimensional_Array {
+
+	public static void main(String[] args) {
+		int marks[]= {1,2,3};
+		for(int a:marks) {
+			System.out.println(a);
+		}
+	}
+
+}

@@ -1,0 +1,17 @@
+package static_nested_class;
+
+public class static_nested_class {
+	// It can access static data members of the outer class, including private. 
+	// The static nested class cannot access non-static (instance) data members or
+	static int data = 30;
+
+	static class inner {
+		static void msg() {
+			System.out.println(data);
+		}
+	}
+
+	public static void main(String[] args) {
+		static_nested_class.inner.msg();
+	}
+}

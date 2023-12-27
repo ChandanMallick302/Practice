@@ -1,0 +1,11 @@
+package package_a;
+
+public class A {
+
+	private String="Hello";
+	int a=10;//Default
+	
+	public static void main(String[] args) {
+		
+	}
+}

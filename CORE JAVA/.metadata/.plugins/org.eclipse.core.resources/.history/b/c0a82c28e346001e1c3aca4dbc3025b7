@@ -1,0 +1,17 @@
+package Using_Thread_Class;
+
+public class Thread1 extends Thread {
+	public void run() {
+		//Task for thread
+		for(int i=0;i>=1;i--) {
+			System.out.println("Another Thread is "+i);
+		}
+	}
+
+	public static void main(String[] args) {
+		Thread1 t1=new Thread1();
+		t1.start();
+
+	}
+
+}

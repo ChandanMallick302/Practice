@@ -1,0 +1,26 @@
+package List_Collection;
+
+import java.util.List;
+import java.util.Vector;
+
+public class Vector_List {
+
+	public static void main(String[] args) {
+		List<Integer> list = new Vector<>();
+		list.add(3);
+		list.add(1);
+		list.add(14);
+		list.add(12);
+		list.add(1);
+
+		list.forEach(a -> {
+			System.out.println(a);
+		});
+
+		// 1. Given Oder preserved
+		// 2. Duplicates are allowed
+		// 3. Vector will increase automatically
+		// 4. Vector is thread safe class
+	}
+
+}

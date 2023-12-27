@@ -1,0 +1,8 @@
+package LocalDate_class;
+import java.util.Date;
+
+public class SimpleDateFormatExample {
+public static void main(String[] args) {
+	Date date=new Date();
+}
+}

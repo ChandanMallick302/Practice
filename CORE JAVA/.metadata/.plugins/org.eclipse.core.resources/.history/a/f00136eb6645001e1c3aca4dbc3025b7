@@ -1,0 +1,15 @@
+package Local_inner_class;
+
+public class LocalInnerClass {
+	private int data = 30;
+
+	void display() {
+		class Local {
+			void msg() {
+				System.out.println(data);
+			}
+			Local l1=new Local();
+			l1.msg();
+		}
+	}
+}

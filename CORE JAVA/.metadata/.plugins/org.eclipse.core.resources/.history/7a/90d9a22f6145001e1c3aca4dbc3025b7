@@ -1,0 +1,11 @@
+package Defining_the_Aarray_Size;
+
+public class Sizing_the_Aarray {
+
+	public static void main(String[] args) {
+		//Defining the size of array
+		int[] arr=new int[10];
+		
+		
+	}
+}
