@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- To enable annotation autowired we need to add xmlns:context and context:annotation-config -->
+	<context:annotation-config />
+
+	<bean name="t1"
+		class="com.springcore.Annotation_AutoWiring.inSetterMethodAutowired.Teacher">
+		<property name="id" value="1" />
+		<property name="name" value="Rajesh" />
+	</bean>
+	<bean name="address"
+		class="com.springcore.Annotation_AutoWiring.inSetterMethodAutowired.Address">
+		<property name="address">
+			<map>
+				<entry key="city" value="soro" />
+				<entry key="state" value="Odisha" />
+			</map>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+<!-- use all tag -->
+<bean name="emp1"
+		class="com.springcore.DependingInjection.SetterInjection.ReferenceType.Employee">
+		<property name="name"> <value>Chandan</value></property>
+		<property name="address"><ref bean="add1"/></property>
+	</bean>
+	
+	<bean name="add1" class="com.springcore.DependingInjection.SetterInjection.ReferenceType.Address">
+	<property name="city"><value>Cuttack</value></property>
+	<property name="state"><value>Odisha</value></property>
+	<property name="pin"><value>653245</value></property>
+	</bean>
+
+<!-- use inside property tag -->
+
+	<bean name="emp2"
+		class="com.springcore.DependingInjection.SetterInjection.ReferenceType.Employee">
+		<property name="name" value="Chandan" />
+		<property name="address" ref="add2">
+		</property>
+	</bean>
+	<bean name="add2"
+		class="com.springcore.DependingInjection.SetterInjection.ReferenceType.Address">
+		<property name="city" value="Balsore" />
+		<property name="state" value="Odisha" />
+		<property name="pin" value="756049" />
+	</bean>
+	
+	
+<!-- 	using p-namespace -->
+
+<bean name="emp"
+		class="com.springcore.DependingInjection.SetterInjection.ReferenceType.Employee"
+		p:name="Rajesh" p:address-ref="add"/>
+
+	<bean name="add"
+		class="com.springcore.DependingInjection.SetterInjection.ReferenceType.Address"
+		p:city="Soro" p:state="Odisha" p:pin="756040" />
+</beans>

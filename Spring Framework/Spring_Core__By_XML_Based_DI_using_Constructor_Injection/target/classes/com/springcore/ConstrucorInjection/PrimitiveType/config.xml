@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/util 
+                        http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+	<!--Give parameter value Using value tag -->
+	<bean name="student1" class="com.springcore.ConstrucorInjection.PrimitiveType.Student">
+		<constructor-arg>
+			<value>1</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>Chandan</value>
+		</constructor-arg>
+	</bean>
+
+	<!-- Give Parameter value using constructor-arg attribute -->
+	<bean name="student2" class="com.springcore.ConstrucorInjection.PrimitiveType.Student">
+		<constructor-arg value="Rajesh" type="String"
+			index="0" />
+		<constructor-arg value="USA" type="String" index="1" />
+	</bean>
+
+	<!-- Note:- To avoid ambiguity problem use parameter type, index -->
+
+	<!-- Give Parameter value using bean attribute c schema -->
+	<bean name="student" class="com.springcore.ConstrucorInjection.PrimitiveType.Student"
+		c:id="1" c:name="Chandan" c:address="ussr" />
+
+</beans>

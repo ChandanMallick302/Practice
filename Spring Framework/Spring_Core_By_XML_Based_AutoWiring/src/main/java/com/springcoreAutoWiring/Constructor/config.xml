@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="e1" class="com.springcoreAutoWiring.Constructor.Employee"
+		autowire="constructor">
+		<constructor-arg name="id" value="3" />
+		<constructor-arg name="name" value="Ramesh" />
+	</bean>
+
+
+<!-- name should be same with class object variable name like 'phone', Otherwise it will give null value -->
+
+	<bean name="phone"
+		class="com.springcoreAutoWiring.Constructor.Phone">
+		<constructor-arg name="phone">
+			<map>
+			<entry key="Airtel" value="123456"/>
+			<entry key="Jio" value="456789"/>
+			</map>
+		</constructor-arg>
+	</bean>
+</beans>
